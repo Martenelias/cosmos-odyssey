@@ -3,17 +3,17 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Navbar className='bg-backgroundDark-900 text-backgroundLight-500 font-exo-2 fixed w-full'>
-      <Navbar.Brand href="/">
-      <img src="/space.svg" className="mr-3 xl:h-12 lg:h-9 h-7" alt="Cosmos Odyssey Logo" />
-      <span className="self-center whitespace-nowrap text-lg lg:text-xl">Cosmos Odyssey</span>
+    <Navbar className='bg-background-500 text-tertiary-50 font-exo-2 fixed w-full'>
+      <Navbar.Brand href='/'>
+      <img src='/space.svg' className='mr-3 xl:h-8 lg:h-6 h-5' alt='Cosmos Odyssey Logo' />
+      <span className='self-center whitespace-nowrap text-base lg:text-lg'>Cosmos Odyssey</span>
       </Navbar.Brand>
-      <Navbar.Toggle className='hover:bg-transparent text-backgroundLight-500' />
+      <Navbar.Toggle className='hover:bg-transparent text-tertiary-50' />
       <Navbar.Collapse>
-        <NavLink to='/' active className='text-xl md:text-lg  my-2 py-2 px-4 rounded-lg hover:bg-backgroundDark-500'>
+        <NavLink to='/' active className='text-lg md:text-base  my-2 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Home
         </NavLink>
-        <NavLink to='/routes' className='text-xl md:text-lg  my-2 py-2 px-4 rounded-lg hover:bg-backgroundDark-500'>
+        <NavLink to='/routes' className='text-lg md:text-base  my-2 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Routes
         </NavLink>
       </Navbar.Collapse>

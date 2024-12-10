@@ -1,9 +1,9 @@
-import flowbite from "flowbite-react/tailwind";
+import flowbite from 'flowbite-react/tailwind';
 
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
     flowbite.content()
   ],
   theme: {
@@ -27,30 +27,26 @@ export default {
       },
       colors: {
         'primary': {
-          500: '#7A0BC0',
-          700: '#570888',
-          900: '#330551',
+          500: '#61A1BA',
+          700: '#457284',
+          900: '#29444E',
         },
         'secondary': {
-          500: '#FA58B6',
-          700: '#B23E81',
-          900: '#69254C',
+          500: '#0A4A71',
+          700: '#073550',
+          900: '#041F2F',
         },
         'tertiary': {
-          500: '#270082',
-          700: '#1C005C',
-          900: '#100037',
+          50: '#EFEFF1',
+          200: '#B5B4C0',
+          500: '#5F5B76',
+          700: '#434154',
+          900: '#282632',
         },
-        'backgroundLight': {
-          200: '#F9F9FF',
-          500: '#F2F2FF',
-          700: '#ACACB5',
-          900: '#66666B',
-        },
-        'backgroundDark': {
-          500: '#1A1A40',
-          700: '#12122D',
-          900: '#0B0B1B',
+        'background': {
+          500: '#020D13',
+          700: '#01090D',
+          900: '#010508',
         },
       },
     },
