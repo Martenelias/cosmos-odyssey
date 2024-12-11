@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <Navbar className='bg-background-500 text-tertiary-50 font-exo-2 fixed w-full'>
+    <Navbar className='bg-background-700 text-tertiary-50 font-exo-2 fixed w-full z-50'>
       <Navbar.Brand href='/'>
-      <img src='/space.svg' className='mr-3 xl:h-8 lg:h-6 h-5' alt='Cosmos Odyssey Logo' />
+      <img src='/space.svg' className='pl-2 mr-3 xl:h-8 lg:h-6 h-5' alt='Cosmos Odyssey Logo' />
       <span className='self-center whitespace-nowrap text-base lg:text-lg'>Cosmos Odyssey</span>
       </Navbar.Brand>
       <Navbar.Toggle className='hover:bg-transparent text-tertiary-50' />
