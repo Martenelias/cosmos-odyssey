@@ -2,16 +2,34 @@ import { Dropdown } from 'flowbite-react';
 import { useState, useEffect } from 'react';
 import fetchData from '../utils/ApiList';
 import { getLegs, getRoutesInfo, getProviders } from '../utils/DataParser';
+import { Rocket } from 'lucide-react';
 
 const TravelRoutes = () => {
-  const [legs, setLegs] = useState([]);
   const [routeInfos, setRouteInfos] = useState([]);
   const [providers, setProviders] = useState([]);
-  const [selectedPlanet, setSelectedPlanet] = useState('');
+  const [selectedStartPlanet, setSelectedStartPlanet] = useState('');
+  const [selectedEndPlanet, setSelectedEndPlanet] = useState('');
   const [filteredRoutes, setFilteredRoutes] = useState([]);
   const [selectedLegId, setSelectedLegId] = useState(null);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [showShortDestinations, setShowShortDestinations] = useState(false);
+  const [showShortProviders, setShowShortProviders] = useState(false);
+  const [bigRadio, setBigRadio] = useState(false);
+  const [smallRadio, setSmallRadio] = useState(false);
+
+  const formatDate = (isoDate) => {
+    const dateObj = new Date(isoDate);
+  
+    // Format as YYYY-MM-DD HH:mm
+    const formattedDate = dateObj.getFullYear() + '-' +
+                          String(dateObj.getMonth() + 1).padStart(2, '0') + '-' +
+                          String(dateObj.getDate()).padStart(2, '0') + ' ' +
+                          String(dateObj.getHours()).padStart(2, '0') + ':' +
+                          String(dateObj.getMinutes()).padStart(2, '0');
+  
+    return formattedDate;
+  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -25,7 +43,6 @@ const TravelRoutes = () => {
         console.log('Loaded Route Infos:', parsedRoutesInfo);
         console.log('Loaded Providers:', parsedProviders);
 
-        setLegs(parsedLegs);
         setRouteInfos(parsedRoutesInfo);
         setProviders(parsedProviders);
       } catch (error) {
@@ -38,13 +55,24 @@ const TravelRoutes = () => {
 
   const handleSearchRoutes = (e) => {
     e.preventDefault();
-    if (!selectedPlanet) {
+    if (!selectedStartPlanet) {
       alert('Please select a planet!');
       return;
     }
-    const filteredRoutes = routeInfos.filter((route) => route.from?.name === selectedPlanet);
-    console.log('Filtered Routes:', filteredRoutes);
-    setFilteredRoutes(filteredRoutes);
+
+    if (bigRadio && selectedStartPlanet === selectedEndPlanet) {
+      alert('Please choose a different destination than your starting location.');
+      return;
+    }
+
+    if (smallRadio) {
+      const filteredRoutes = routeInfos.filter(
+        (route) => route.from?.name === selectedStartPlanet
+      );
+      setFilteredRoutes(filteredRoutes);
+      setShowShortDestinations(true);
+      setShowShortProviders(false);
+    }
   };
 
   const handleChooseRoute = (route) => {
@@ -55,7 +83,7 @@ const TravelRoutes = () => {
   const filteredProviders = providers.filter((provider) => provider.legId === selectedLegId);
 
   return (
-    <div className='min-h-screen bg-gradient-to-b from-secondary-700 to-background-900 font-exo-2 flex flex-col pt-40 items-center p-10'>
+    <div className='min-h-screen bg-gradient-to-b from-secondary-700 to-background-900 font-exo-2 flex flex-col pt-28 items-center p-4'>
       <div className='max-w-[800px] w-full'>
         <div className='flex flex-col justify-center items-center shadow-2xl rounded-lg bg-background-500'>
           <h2 className='text-tertiary-50 text-base lg:text-xl px-4 pt-10'>Start Your Interplanetary Adventure!</h2>
@@ -82,24 +110,72 @@ const TravelRoutes = () => {
                   className='rounded-lg placeholder-tertiary-200 text-sm text-tertiary-50 lg:text-base px-4 bg-transparent border border-tertiary-50 w-full'
                 />
               </div>
+              <div className='w-full flex justify-start items-center gap-4'>
+                <input
+                  type='radio'
+                  name='short-routes'
+                  value='short'
+                  checked={smallRadio}
+                  onChange={() => {
+                    setBigRadio(false);
+                    setSmallRadio(true);
+                  }}
+                  className='form-radio'
+                />
+                <span className='text-tertiary-50'>Only short routes</span>
+              </div>  
+              <div className='w-full flex justify-start items-center gap-4'>
+                <input
+                  type='radio'
+                  name='long-routes'
+                  value='long'
+                  checked={bigRadio}
+                  onChange={() => {
+                    setSmallRadio(false);
+                    setBigRadio(true);
+                  }}
+                  className='form-radio'
+                />
+                <span className='text-tertiary-50'>Only long routes</span>
+              </div>
+              
               <div className='block w-full'>
                 <Dropdown
-                  label={selectedPlanet || 'Your Location'}
+                  label={selectedStartPlanet || 'Your Location'}
                   color='light'
                   theme={{ floating: { target: 'w-full' } }}
                 >
-                  {['Earth', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'].map((planet) => (
+                  {['Earth', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'].map((startPlanet) => (
                     <Dropdown.Item
-                      key={planet}
-                      onClick={() => setSelectedPlanet(planet)}
+                      key={startPlanet}
+                      onClick={() => setSelectedStartPlanet(startPlanet)}
                     >
-                      {planet}
+                      {startPlanet}
                     </Dropdown.Item>
                   ))}
                 </Dropdown>
               </div>
+              {bigRadio && (
+                <div className='block w-full'>
+                  <Dropdown
+                    label={selectedEndPlanet || 'Your Destination'}
+                    color='light'
+                    theme={{ floating: { target: 'w-full' } }}
+                  >
+                    {['Earth', 'Mars', 'Venus', 'Mercury', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'].map((endPlanet) => (
+                      <Dropdown.Item
+                        key={endPlanet}
+                        onClick={() => setSelectedEndPlanet(endPlanet)}
+                      >
+                        {endPlanet}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown>
+                </div>
+              )}
               <button
                 type='submit'
+                onClick={() => setShowShortDestinations(true)}
                 className='rounded-lg text-tertiary-50 py-2 px-4 w-full bg-primary-500 hover:bg-primary-700'
               >
                 Search Routes
@@ -108,7 +184,8 @@ const TravelRoutes = () => {
             <img src='/rocket.png' alt='A Rocket Image' className='h-40 hidden lg:block' />
           </div>
         </div>
-        <div className='p-12 mt-8 bg-background-500 rounded-lg shadow-2xl'>
+        {showShortDestinations && (
+          <div className='p-6 mt-8 bg-background-500 rounded-lg shadow-2xl'>
           <h2 className='text-tertiary-50 text-base lg:text-xl pb-4 w-full'>
             List of Destinations for {firstName || 'Guest'} {lastName || ''}
           </h2>
@@ -116,14 +193,17 @@ const TravelRoutes = () => {
             filteredRoutes.map((route) => (
               <div key={route.id} className='p-4 mb-4 w-full border rounded-lg flex justify-between items-center'>
                 <div>
-                  <h3 className='text-primary-500 text-lg'>
+                  <h3 className='text-primary-500 text-base lg:text-lg'>
                     {route.from.name} → {route.to.name}
                   </h3>
-                  <p className='text-tertiary-50'>Distance: {route.distance} km</p>
+                  <p className='text-tertiary-50 text-sm lg:text-base'>{route.distance} km</p>
                 </div>
                 <button
-                  onClick={() => handleChooseRoute(route)}
-                  className='rounded-lg text-tertiary-50 py-2 px-4 bg-primary-500 hover:bg-primary-700'
+                  onClick={() => {
+                    handleChooseRoute(route);
+                    setShowShortProviders(true);
+                  }}
+                  className='rounded-lg text-tertiary-50 text-sm lg:text-base py-2 px-4 bg-primary-500 hover:bg-primary-700'
                 >
                   Choose Route
                 </button>
@@ -133,28 +213,32 @@ const TravelRoutes = () => {
             <p className='text-tertiary-200'>No routes available. Please select a location.</p>
           )}
         </div>
-        <div className='p-12 mt-8 bg-background-500 rounded-lg shadow-2xl'>
+        )}
+        
+        {showShortProviders && (
+          <div className='p-6 mt-8 bg-background-500 rounded-lg shadow-2xl'>
           <h2 className='text-tertiary-50 text-base lg:text-xl pb-4 w-full'>List of Companies for this Route</h2>
           {filteredProviders.length > 0 ? (
             filteredProviders.map((provider) => (
               <div key={provider.id} className='p-4 mb-4 w-full border rounded-lg flex justify-between items-center'>
                 <div className='text-tertiary-50 flex flex-col justify-center items-start gap-2'>
-                  <h3 className='text-primary-500 text-lg'>{provider.company.name}</h3>
-                  <p>Flight Start: {provider.flightStart}</p>
-                  <p>Flight End: {provider.flightEnd}</p>
-                  <p className='text-tertiary-500 text-lg'>€ {provider.price}</p>
+                  <h3 className='text-primary-500 text-base lg:text-lg'>{provider.company.name}</h3>
+                  <p className='text-tertiary-50 text-sm lg:text-base flex justify-center items-center gap-1'><Rocket size={16} />{formatDate(provider.flightStart)}</p>
+                  <p className='text-tertiary-50 text-sm lg:text-base flex justify-center items-center gap-1'><Rocket size={16} className='rotate-180' /> {formatDate(provider.flightEnd)}</p>
+                  <p className='text-tertiary-500 text-base lg:text-lg'>€ {provider.price}</p>
                 </div>
                 <button
-                  className='rounded-lg text-tertiary-50 py-2 px-4 bg-primary-500 hover:bg-primary-700'
+                  className='rounded-lg text-tertiary-50 text-sm lg:text-base py-2 px-4 bg-primary-500 hover:bg-primary-700'
                 >
-                  Choose Company
+                  Book Reservation
                 </button>
               </div>
             ))
           ) : (
-            <p>No providers available for this route.</p>
+            <p className='text-tertiary-200'>No providers available for this route.</p>
           )}
         </div>
+        )}
       </div>
     </div>
   );
