@@ -1,0 +1,552 @@
+{
+  "id": "mockApi_12345",
+  "validUntil": "2024-12-31T23:59:59Z",
+  "legs": [
+    {
+      "id": "leg_1",
+      "routeInfo": {
+        "id": "route_1",
+        "distance": 78000,
+        "from": { "name": "Earth" },
+        "to": { "name": "Mars" }
+      },
+      "providers": [
+        {
+          "id": "provider_1",
+          "company": { "name": "SpaceX" },
+          "price": 5000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_2",
+          "company": { "name": "Blue Origin" },
+          "price": 5200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_29",
+          "company": { "name": "Galactic Express" },
+          "price": 5100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_30",
+          "company": { "name": "Interstellar Inc." },
+          "price": 5300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_2",
+      "routeInfo": {
+        "id": "route_2",
+        "distance": 52000,
+        "from": { "name": "Earth" },
+        "to": { "name": "Venus" }
+      },
+      "providers": [
+        {
+          "id": "provider_3",
+          "company": { "name": "NASA" },
+          "price": 4500,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T14:00:00Z"
+        },
+        {
+          "id": "provider_4",
+          "company": { "name": "Virgin Galactic" },
+          "price": 4700,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_31",
+          "company": { "name": "Galactic Express" },
+          "price": 4600,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_32",
+          "company": { "name": "Interstellar Inc." },
+          "price": 4800,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_3",
+      "routeInfo": {
+        "id": "route_3",
+        "distance": 90000,
+        "from": { "name": "Mars" },
+        "to": { "name": "Venus" }
+      },
+      "providers": [
+        {
+          "id": "provider_5",
+          "company": { "name": "SpaceX" },
+          "price": 3000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_6",
+          "company": { "name": "Blue Origin" },
+          "price": 3200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_33",
+          "company": { "name": "Galactic Express" },
+          "price": 3100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_34",
+          "company": { "name": "Interstellar Inc." },
+          "price": 3300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_4",
+      "routeInfo": {
+        "id": "route_4",
+        "distance": 120000,
+        "from": { "name": "Venus" },
+        "to": { "name": "Mercury" }
+      },
+      "providers": [
+        {
+          "id": "provider_7",
+          "company": { "name": "SpaceX" },
+          "price": 2000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_8",
+          "company": { "name": "Blue Origin" },
+          "price": 2200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_35",
+          "company": { "name": "Galactic Express" },
+          "price": 2100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_36",
+          "company": { "name": "Interstellar Inc." },
+          "price": 2300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_5",
+      "routeInfo": {
+        "id": "route_5",
+        "distance": 150000,
+        "from": { "name": "Mercury" },
+        "to": { "name": "Jupiter" }
+      },
+      "providers": [
+        {
+          "id": "provider_9",
+          "company": { "name": "NASA" },
+          "price": 7000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_10",
+          "company": { "name": "Virgin Galactic" },
+          "price": 7300,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_37",
+          "company": { "name": "Galactic Express" },
+          "price": 7100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_38",
+          "company": { "name": "Interstellar Inc." },
+          "price": 7400,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_6",
+      "routeInfo": {
+        "id": "route_6",
+        "distance": 80000,
+        "from": { "name": "Jupiter" },
+        "to": { "name": "Saturn" }
+      },
+      "providers": [
+        {
+          "id": "provider_11",
+          "company": { "name": "SpaceX" },
+          "price": 4000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_12",
+          "company": { "name": "Blue Origin" },
+          "price": 4200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_39",
+          "company": { "name": "Galactic Express" },
+          "price": 4100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_40",
+          "company": { "name": "Interstellar Inc." },
+          "price": 4300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_7",
+      "routeInfo": {
+        "id": "route_7",
+        "distance": 95000,
+        "from": { "name": "Saturn" },
+        "to": { "name": "Uranus" }
+      },
+      "providers": [
+        {
+          "id": "provider_13",
+          "company": { "name": "NASA" },
+          "price": 5000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_14",
+          "company": { "name": "Virgin Galactic" },
+          "price": 5200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_41",
+          "company": { "name": "Galactic Express" },
+          "price": 5100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_42",
+          "company": { "name": "Interstellar Inc." },
+          "price": 5300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_8",
+      "routeInfo": {
+        "id": "route_8",
+        "distance": 78000,
+        "from": { "name": "Uranus" },
+        "to": { "name": "Neptune" }
+      },
+      "providers": [
+        {
+          "id": "provider_15",
+          "company": { "name": "SpaceX" },
+          "price": 6000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_16",
+          "company": { "name": "Blue Origin" },
+          "price": 6200,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_43",
+          "company": { "name": "Galactic Express" },
+          "price": 6100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_44",
+          "company": { "name": "Interstellar Inc." },
+          "price": 6300,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_9",
+      "routeInfo": {
+        "id": "route_9",
+        "distance": 100000,
+        "from": { "name": "Neptune" },
+        "to": { "name": "Earth" }
+      },
+      "providers": [
+        {
+          "id": "provider_17",
+          "company": { "name": "NASA" },
+          "price": 8000,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_18",
+          "company": { "name": "Virgin Galactic" },
+          "price": 8300,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_45",
+          "company": { "name": "Galactic Express" },
+          "price": 8100,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_46",
+          "company": { "name": "Interstellar Inc." },
+          "price": 8400,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_10",
+      "routeInfo": {
+        "id": "route_10",
+        "distance": 112000,
+        "from": { "name": "Venus" },
+        "to": { "name": "Uranus" }
+      },
+      "providers": [
+        {
+          "id": "provider_19",
+          "company": { "name": "SpaceX" },
+          "price": 6800,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_20",
+          "company": { "name": "Blue Origin" },
+          "price": 7000,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_47",
+          "company": { "name": "Galactic Express" },
+          "price": 6900,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_48",
+          "company": { "name": "Interstellar Inc." },
+          "price": 7100,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_11",
+      "routeInfo": {
+        "id": "route_11",
+        "distance": 95000,
+        "from": { "name": "Jupiter" },
+        "to": { "name": "Mercury" }
+      },
+      "providers": [
+        {
+          "id": "provider_21",
+          "company": { "name": "NASA" },
+          "price": 7400,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_22",
+          "company": { "name": "Virgin Galactic" },
+          "price": 7700,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_49",
+          "company": { "name": "Galactic Express" },
+          "price": 7500,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_50",
+          "company": { "name": "Interstellar Inc." },
+          "price": 7800,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_12",
+      "routeInfo": {
+        "id": "route_12",
+        "distance": 128000,
+        "from": { "name": "Saturn" },
+        "to": { "name": "Venus" }
+      },
+      "providers": [
+        {
+          "id": "provider_23",
+          "company": { "name": "SpaceX" },
+          "price": 6700,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_24",
+          "company": { "name": "Blue Origin" },
+          "price": 6900,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_51",
+          "company": { "name": "Galactic Express" },
+          "price": 6800,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_52",
+          "company": { "name": "Interstellar Inc." },
+          "price": 7000,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_13",
+      "routeInfo": {
+        "id": "route_13",
+        "distance": 72000,
+        "from": { "name": "Earth" },
+        "to": { "name": "Saturn" }
+      },
+      "providers": [
+        {
+          "id": "provider_25",
+          "company": { "name": "NASA" },
+          "price": 6200,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_26",
+          "company": { "name": "Virgin Galactic" },
+          "price": 6400,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_53",
+          "company": { "name": "Galactic Express" },
+          "price": 6300,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_54",
+          "company": { "name": "Interstellar Inc." },
+          "price": 6500,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "id": "leg_14",
+      "routeInfo": {
+        "id": "route_14",
+        "distance": 104000,
+        "from": { "name": "Uranus" },
+        "to": { "name": "Mercury" }
+      },
+      "providers": [
+        {
+          "id": "provider_27",
+          "company": { "name": "SpaceX" },
+          "price": 8600,
+          "flightStart": "2024-12-12T10:00:00Z",
+          "flightEnd": "2024-12-12T15:00:00Z"
+        },
+        {
+          "id": "provider_28",
+          "company": { "name": "Blue Origin" },
+          "price": 8900,
+          "flightStart": "2024-12-12T11:00:00Z",
+          "flightEnd": "2024-12-12T16:00:00Z"
+        },
+        {
+          "id": "provider_55",
+          "company": { "name": "Galactic Express" },
+          "price": 8700,
+          "flightStart": "2024-12-12T12:00:00Z",
+          "flightEnd": "2024-12-12T17:00:00Z"
+        },
+        {
+          "id": "provider_56",
+          "company": { "name": "Interstellar Inc." },
+          "price": 9000,
+          "flightStart": "2024-12-12T13:00:00Z",
+          "flightEnd": "2024-12-12T18:00:00Z"
+        }
+      ]
+    }
+  ]
+}
