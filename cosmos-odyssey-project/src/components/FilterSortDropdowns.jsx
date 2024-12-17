@@ -1,41 +1,34 @@
-import { Dropdown } from 'flowbite-react';
 import PropTypes from 'prop-types';
+import Dropdown from './Dropdown';
 
 const FilterSortDropdowns = ({ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes }) => {
+  const companyOptions = ['All Companies', ...new Set(filteredRoutes.map((route) => route.companyName))];
+
+  const sortOptions = [
+    { value: 'totalPrice', label: 'Price' },
+    { value: 'totalTravelTime', label: 'Travel Time' },
+    { value: 'totalDistance', label: 'Distance' }
+  ];
+
   return (
-    <div className='flex gap-4 mb-4'>
+    <div className='flex justify-center items-center gap-4 w-full'>
       <Dropdown
-        label={filterByCompany || 'Choose Company'}
-        color='light'
-        theme={{ floating: { target: 'w-full' } }}
-        placement='bottom'
-      >
-        {['', ...new Set(filteredRoutes.map((route) => route.companyName))].map((company) => (
-          <Dropdown.Item key={company} onClick={() => setFilterByCompany(company)}>
-            {company || 'All Companies'}
-          </Dropdown.Item>
-        ))}
-      </Dropdown>
+        label={filterByCompany || 'Company'}
+        options={companyOptions}
+        onSelect={setFilterByCompany}
+        buttonText='Select Company'
+      />
 
       <Dropdown
-        label={sortBy || 'Sort by'}
-        color='light'
-        theme={{ floating: { target: 'w-full' } }}
-        placement='bottom'
-      >
-        {['totalPrice', 'totalTravelTime', 'totalDistance'].map((sortOption) => (
-          <Dropdown.Item key={sortOption} onClick={() => setSortBy(sortOption)}>
-            {sortOption === 'totalPrice'
-              ? 'Price'
-              : sortOption === 'totalTravelTime'
-              ? 'Travel Time'
-              : 'Distance'}
-          </Dropdown.Item>
-        ))}
-      </Dropdown>
+        label={sortBy ? sortOptions.find(option => option.value === sortBy)?.label : 'Sort by'}
+        options={sortOptions.map(option => option.label)}
+        onSelect={(selectedSort) => setSortBy(sortOptions.find(option => option.label === selectedSort)?.value)}
+        buttonText='Select Sorting'
+      />
     </div>
   );
 };
+
 FilterSortDropdowns.propTypes = {
   filterByCompany: PropTypes.string,
   sortBy: PropTypes.string,
