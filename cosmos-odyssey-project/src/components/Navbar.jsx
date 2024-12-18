@@ -13,10 +13,10 @@ const Nav = () => {
         <NavLink to='/' active className='text-base md:text-sm my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Home
         </NavLink>
-        <NavLink to='/routes' className='v my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
+        <NavLink to='/routes' className='my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Routes
         </NavLink>
-        <NavLink to='/reservations' className='v my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
+        <NavLink to='/reservations' className='my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Reservations
         </NavLink>
       </Navbar.Collapse>

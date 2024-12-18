@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import fetchData from '../utils/ApiList';
 import { getLegs, getRoutesInfo, getProviders } from '../utils/DataParser';
-import { findAllJourneys } from '../utils/JourneyFinder';
-import { enrichRoutes } from '../utils/RouteEnricher';
+import { findCheapRoutes } from '../utils/RouteFinder';
+import { getTopRoutes } from '../utils/TopRoutes';
 import TravelForm from '../components/TravelForm';
 import FilterSortDropdowns from '../components/FilterSortDropdowns';
 import RouteList from '../components/RouteList';
@@ -22,51 +22,55 @@ const TravelRoutes = () => {
   useEffect(() => {
     const loadData = async () => {
       const data = await fetchData();
-        const parsedLegs = getLegs(data);
-        const parsedRoutesInfo = getRoutesInfo(parsedLegs);
-        const parsedProviders = getProviders(parsedLegs);
+      const parsedLegs = getLegs(data);
+      const parsedRoutesInfo = getRoutesInfo(parsedLegs);
+      const parsedProviders = getProviders(parsedLegs);
 
-        console.log('Loaded Route Infos:', parsedRoutesInfo);
-        console.log('Loaded Providers:', parsedProviders);
+      console.log('Loaded Route Infos:', parsedRoutesInfo);
+      console.log('Loaded Providers:', parsedProviders);
 
-        setRouteInfos(parsedRoutesInfo);
-        setProviders(parsedProviders);
+      setRouteInfos(parsedRoutesInfo);
+      setProviders(parsedProviders);
     };
     loadData();
   }, []);
 
   const handleSearchRoutes = (e) => {
     e.preventDefault();
-    const allRoutes = findAllJourneys(selectedPlanet, selectedEndPlanet, routeInfos, providers);
-    const enrichedRoutes = enrichRoutes(allRoutes);
-    setFilteredRoutes(enrichedRoutes);
+
+    if (!selectedPlanet || !selectedEndPlanet) {
+      alert('Please select a location and destination!');
+      return;
+    }
+
+    if (!firstName || !lastName) {
+      alert('Please enter your first and last name!');
+      return;
+    }
+
+    if (selectedPlanet === selectedEndPlanet) {
+      alert('Please select a different destination!');
+      return;
+    }
+
+    // Finding the best routes
+    console.log('Finding best routes...');
+    const cheapRoutes = findCheapRoutes(routeInfos, providers, selectedPlanet, selectedEndPlanet);
+    console.log('Best Routes:', cheapRoutes);
+
+    const topRoutes = getTopRoutes(cheapRoutes, 30);  // Use the imported getTopRoutes function
+    console.log('Top Routes:', topRoutes);
+
+    setFilteredRoutes(topRoutes);
     setRoutesContainer(true);
   };
-
-  const getFilteredAndSortedRoutes = () => {
-    let routes = [...filteredRoutes];
-  
-    if (filterByCompany && filterByCompany !== 'All Companies') {
-      routes = routes.filter((route) => route.companyName === filterByCompany);
-    }
-  
-    if (sortBy) {
-      routes.sort((a, b) => {
-        if (sortBy === 'totalPrice') return a.totalPrice - b.totalPrice;
-        if (sortBy === 'totalTravelTime') return a.totalTravelTime - b.totalTravelTime;
-        if (sortBy === 'totalDistance') return a.distance - b.distance;
-        return 0;
-      });
-    }
-  
-    return routes;
-  };
-  
 
   return (
     <div className='min-h-screen bg-gradient-to-b from-secondary-700 to-background-900 font-exo-2 flex flex-col pt-28 items-center p-4'>
       <div className='max-w-[800px] w-full'>
-        <h1 className='text-tertiary-50 lg:text-xl text-base w-full text-center pb-12'>Choose Your Destinations and Explore the Cosmos!</h1>
+        <h1 className='text-tertiary-50 lg:text-xl text-base w-full text-center pb-12'>
+          Choose Your Destinations and Explore the Cosmos!
+        </h1>
         <TravelForm
           {...{
             firstName,
@@ -94,12 +98,12 @@ const TravelRoutes = () => {
                 </div>
                 <div className='flex justify-center items-center gap-4 w-full px-4'>
                   <FilterSortDropdowns
-                  {...{ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes }}
+                    {...{ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes }}
                   />
                 </div>
               </div>
             </div>
-            <RouteList routes={getFilteredAndSortedRoutes()} />
+            <RouteList routes={filteredRoutes} />
           </div>
         )}
       </div>
