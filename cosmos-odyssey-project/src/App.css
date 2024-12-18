@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.block.w-full button > span {
+  font-size: 1.25rem; /* Adjust font size */
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block.w-full button > span > svg {
+  color: #020D13;
+}

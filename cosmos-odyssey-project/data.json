@@ -1,0 +1,2274 @@
+{
+  "id": "395cf7a8-faa5-4593-8789-58a44f04d8b0",
+  "validUntil": "2024-12-17T12:27:00.8229826Z",
+  "legs": [
+    {
+      "id": "35584c7a-00ba-4c99-963e-e738942e2d76",
+      "routeInfo": {
+        "id": "b7ef86a6-adfc-4343-80dd-1e40d49b0c63",
+        "from": {
+          "id": "10ceca3d-5448-450d-abb2-b606e2e60965",
+          "name": "Earth"
+        },
+        "to": {
+          "id": "8a241156-53d4-4529-842f-8f0aa972b3c1",
+          "name": "Jupiter"
+        },
+        "distance": 628730000
+      },
+      "providers": [
+        {
+          "id": "3cc0e8b7-947a-4fe4-b4ff-ec416f3744f6",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 431851.75,
+          "flightStart": "2024-12-17T20:11:00.8230163Z",
+          "flightEnd": "2024-12-22T17:45:00.8230163Z"
+        },
+        {
+          "id": "5539499d-9974-4247-a8e8-a68549f386b7",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 192538.61,
+          "flightStart": "2024-12-29T04:21:00.823036Z",
+          "flightEnd": "2025-01-04T00:39:00.823036Z"
+        },
+        {
+          "id": "ec2eb0fe-9084-47ba-90c6-4f84e5fa2cab",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 435992.77,
+          "flightStart": "2024-12-29T02:43:00.823059Z",
+          "flightEnd": "2025-01-03T08:03:00.823059Z"
+        },
+        {
+          "id": "c51424d9-1c27-4417-882c-2398bf473dbb",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 179940.73,
+          "flightStart": "2024-12-19T23:48:00.8230719Z",
+          "flightEnd": "2024-12-23T10:52:00.8230719Z"
+        },
+        {
+          "id": "f7f0d262-7a22-45a0-bc82-924f40b683a4",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 579609.13,
+          "flightStart": "2024-12-29T13:40:00.8230847Z",
+          "flightEnd": "2025-01-01T07:05:00.8230847Z"
+        },
+        {
+          "id": "575719e8-689c-4b2c-8ae1-c35f3f825fa7",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 45880.84,
+          "flightStart": "2024-12-25T22:28:00.8231024Z",
+          "flightEnd": "2024-12-28T19:05:00.8231024Z"
+        },
+        {
+          "id": "d39ae482-f3a6-4151-8af4-e22c9d36c82c",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 119297.56,
+          "flightStart": "2024-12-18T13:54:00.8231155Z",
+          "flightEnd": "2024-12-19T22:24:00.8231155Z"
+        },
+        {
+          "id": "aacb8047-301c-41a2-b6a6-e74e2a2d20ed",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 269319.08,
+          "flightStart": "2024-12-31T22:25:00.823145Z",
+          "flightEnd": "2025-01-02T14:26:00.823145Z"
+        },
+        {
+          "id": "e1151847-7713-4014-8c1c-3e7ca97f034b",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 254402.44,
+          "flightStart": "2024-12-18T11:58:00.8231579Z",
+          "flightEnd": "2024-12-22T01:05:00.8231579Z"
+        },
+        {
+          "id": "6c8c011a-2b61-4364-bbf4-b3b6d842cb69",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 31744.86,
+          "flightStart": "2024-12-27T16:16:00.82318Z",
+          "flightEnd": "2024-12-31T11:44:00.82318Z"
+        },
+        {
+          "id": "067c43e0-06f7-44b2-9750-b5a2eba8589f",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 156735.39,
+          "flightStart": "2024-12-17T15:17:00.8231928Z",
+          "flightEnd": "2024-12-18T18:09:00.8231928Z"
+        }
+      ]
+    },
+    {
+      "id": "b2db555e-3639-438f-bf37-2479e2ada379",
+      "routeInfo": {
+        "id": "69ffd239-03bc-464c-bfdf-125e52bfaa34",
+        "from": {
+          "id": "854afb97-d8af-4a69-8805-5ae397e9c75a",
+          "name": "Earth"
+        },
+        "to": {
+          "id": "82925920-46ed-405b-84bf-31b017b5e321",
+          "name": "Uranus"
+        },
+        "distance": 2723950000
+      },
+      "providers": [
+        {
+          "id": "1fdffa97-0934-4776-a397-4d07f1b01b8c",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1639512.13,
+          "flightStart": "2024-12-28T12:12:00.8232074Z",
+          "flightEnd": "2025-01-02T18:18:00.8232074Z"
+        },
+        {
+          "id": "754bd071-4323-4678-b5f2-1eaf02f26bc0",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 1675639.88,
+          "flightStart": "2024-12-25T12:50:00.823224Z",
+          "flightEnd": "2024-12-28T21:10:00.823224Z"
+        },
+        {
+          "id": "706ccb11-244d-4a8a-9ae1-32a075beb9c2",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 300848.16,
+          "flightStart": "2024-12-22T19:05:00.8232369Z",
+          "flightEnd": "2024-12-24T04:26:00.8232369Z"
+        },
+        {
+          "id": "ef8b98ae-1d1f-4102-b4fc-df1f4fdae065",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 59585.68,
+          "flightStart": "2024-12-28T06:28:00.8232498Z",
+          "flightEnd": "2025-01-01T09:30:00.8232498Z"
+        },
+        {
+          "id": "efe8ece4-b3f9-4441-9afa-538da01d5683",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 1082148.36,
+          "flightStart": "2024-12-24T03:43:00.8232624Z",
+          "flightEnd": "2024-12-29T13:33:00.8232624Z"
+        },
+        {
+          "id": "76def56a-4f00-443a-a018-51bc7ca5347f",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 2194472.37,
+          "flightStart": "2024-12-26T04:07:00.8232795Z",
+          "flightEnd": "2024-12-27T09:30:00.8232795Z"
+        },
+        {
+          "id": "f1256875-b1a1-4a8e-adca-9b9710e4f554",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 1414989.44,
+          "flightStart": "2024-12-19T06:37:00.8232925Z",
+          "flightEnd": "2024-12-21T09:16:00.8232925Z"
+        },
+        {
+          "id": "8409b6b7-f127-44f3-bf59-46041ba79a9c",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 381480.08,
+          "flightStart": "2024-12-26T06:08:00.8233051Z",
+          "flightEnd": "2024-12-28T19:28:00.8233051Z"
+        },
+        {
+          "id": "3a16482c-6506-4c9c-aa12-108f3a8776d3",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 772336.52,
+          "flightStart": "2024-12-30T12:05:00.8233214Z",
+          "flightEnd": "2025-01-03T01:39:00.8233214Z"
+        },
+        {
+          "id": "fccac53d-4181-4281-8f67-ee0c30c49a81",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 715695.39,
+          "flightStart": "2024-12-30T07:32:00.8233343Z",
+          "flightEnd": "2025-01-02T11:17:00.8233343Z"
+        },
+        {
+          "id": "7cd1c4a5-27fc-482c-8223-aac3e25c4c6c",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 102463.44,
+          "flightStart": "2024-12-17T23:26:00.8233476Z",
+          "flightEnd": "2024-12-19T07:43:00.8233476Z"
+        },
+        {
+          "id": "d078e5c6-b294-4759-8d5a-93434d577de8",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1334287.18,
+          "flightStart": "2024-12-23T14:13:00.8234324Z",
+          "flightEnd": "2024-12-27T05:51:00.8234324Z"
+        }
+      ]
+    },
+    {
+      "id": "4b7be26d-7db0-4ad4-936d-a78efb1b3b2e",
+      "routeInfo": {
+        "id": "6813f911-fffe-4206-8718-b95aa052a6fd",
+        "from": {
+          "id": "a036b0e5-cd1e-47f0-80c1-31511ab3dbc7",
+          "name": "Mercury"
+        },
+        "to": {
+          "id": "e782a8ff-fdef-4e08-b676-b84ceaa50d2c",
+          "name": "Venus"
+        },
+        "distance": 50290000
+      },
+      "providers": [
+        {
+          "id": "42f3b472-17ef-45ae-bd1c-fe47fdefc6a9",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 7897.55,
+          "flightStart": "2024-12-22T14:11:00.8234585Z",
+          "flightEnd": "2024-12-25T07:52:00.8234585Z"
+        },
+        {
+          "id": "ca5dea1f-cf56-40d5-8326-f3b0536fa8af",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 2403.94,
+          "flightStart": "2024-12-30T17:13:00.8235849Z",
+          "flightEnd": "2024-12-31T22:55:00.8235849Z"
+        },
+        {
+          "id": "6a4afe48-7821-4d7d-aa86-8523112518c5",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 46858.67,
+          "flightStart": "2024-12-27T09:59:00.8235979Z",
+          "flightEnd": "2025-01-02T05:39:00.8235979Z"
+        },
+        {
+          "id": "30f2b199-21b1-492b-99bc-319069750247",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 34297.7,
+          "flightStart": "2024-12-19T05:22:00.8236167Z",
+          "flightEnd": "2024-12-21T22:43:00.8236167Z"
+        },
+        {
+          "id": "f9d13834-a118-4df5-b46e-4d6d3a885f50",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 28682.1,
+          "flightStart": "2024-12-18T12:43:00.8236294Z",
+          "flightEnd": "2024-12-21T18:14:00.8236294Z"
+        },
+        {
+          "id": "ba223d19-cbb2-4251-9d5a-4a14c2adb11d",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 26148.35,
+          "flightStart": "2024-12-28T06:22:00.8236425Z",
+          "flightEnd": "2025-01-01T23:32:00.8236425Z"
+        },
+        {
+          "id": "1231b11e-9108-43cf-86dd-c2cec7ee5920",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 6409.92,
+          "flightStart": "2024-12-20T17:55:00.8236611Z",
+          "flightEnd": "2024-12-24T15:45:00.8236611Z"
+        },
+        {
+          "id": "48a0e033-b218-4f54-a6f2-6cfb3b3a2901",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 21048.79,
+          "flightStart": "2024-12-24T14:02:00.8236742Z",
+          "flightEnd": "2024-12-28T19:45:00.8236742Z"
+        },
+        {
+          "id": "b887a6ba-f847-4350-84e8-acbf23eee130",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 13082.09,
+          "flightStart": "2024-12-17T16:50:00.8236867Z",
+          "flightEnd": "2024-12-23T14:39:00.8236867Z"
+        },
+        {
+          "id": "4e6659c5-8008-453f-a6e1-1d1ee8e44314",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 41898.89,
+          "flightStart": "2024-12-25T13:03:00.8236998Z",
+          "flightEnd": "2024-12-29T18:17:00.8236998Z"
+        },
+        {
+          "id": "f47601c1-b5e4-4495-90e7-20ae1b643fdd",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 33963.74,
+          "flightStart": "2024-12-25T06:58:00.8237162Z",
+          "flightEnd": "2024-12-27T15:06:00.8237162Z"
+        },
+        {
+          "id": "12836d46-b21a-45a3-a712-311f20ca4ef1",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 1102.48,
+          "flightStart": "2024-12-28T07:50:00.8237291Z",
+          "flightEnd": "2025-01-02T17:52:00.8237291Z"
+        },
+        {
+          "id": "353c6144-ed02-4220-a726-114c2db19d97",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 35025.19,
+          "flightStart": "2024-12-25T03:38:00.8237418Z",
+          "flightEnd": "2024-12-27T10:24:00.8237418Z"
+        },
+        {
+          "id": "2e041111-a3fd-4269-8947-bd99618459ae",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 7324,
+          "flightStart": "2024-12-25T02:52:00.8237613Z",
+          "flightEnd": "2024-12-29T18:53:00.8237613Z"
+        },
+        {
+          "id": "350e034e-298d-477b-a640-a2cf5c0ceb72",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 150.04,
+          "flightStart": "2024-12-19T10:09:00.8237743Z",
+          "flightEnd": "2024-12-21T02:38:00.8237743Z"
+        },
+        {
+          "id": "73a7b0e7-d7db-41a0-b8db-c87235e0f2a0",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 32093.44,
+          "flightStart": "2024-12-24T21:07:00.8237867Z",
+          "flightEnd": "2024-12-30T18:20:00.8237867Z"
+        },
+        {
+          "id": "930ea395-c464-4bf9-819f-7da214cf00e9",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 11268.53,
+          "flightStart": "2024-12-28T09:12:00.8237995Z",
+          "flightEnd": "2024-12-30T21:21:00.8237995Z"
+        },
+        {
+          "id": "a0cf8ca1-6f36-4638-9b9f-0590f2ecb9db",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 22753.62,
+          "flightStart": "2024-12-25T20:40:00.8238162Z",
+          "flightEnd": "2024-12-29T01:09:00.8238162Z"
+        },
+        {
+          "id": "fb7b1638-3993-4c87-9a7c-1bb397c2e360",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 20748.11,
+          "flightStart": "2024-12-26T20:46:00.8238289Z",
+          "flightEnd": "2024-12-29T16:18:00.8238289Z"
+        }
+      ]
+    },
+    {
+      "id": "e79f72cf-f5b7-42f0-abf0-41f362cfe2c9",
+      "routeInfo": {
+        "id": "f4e06a3c-fc39-4105-b24a-5ffdd7d31a29",
+        "from": {
+          "id": "79cc6e8d-c288-4b6d-bd22-1902f7b4283e",
+          "name": "Venus"
+        },
+        "to": {
+          "id": "3cd2b4a9-eb05-402d-a28a-87dd74b5f58a",
+          "name": "Mercury"
+        },
+        "distance": 50290000
+      },
+      "providers": [
+        {
+          "id": "37999e85-c9dd-41ce-ac19-2a668039d6df",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 37280.73,
+          "flightStart": "2024-12-24T23:51:00.8238433Z",
+          "flightEnd": "2024-12-28T20:48:00.8238433Z"
+        },
+        {
+          "id": "d6551ace-7402-48a9-89f3-c5cd9191bcd3",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 9832.91,
+          "flightStart": "2024-12-20T03:44:00.8238608Z",
+          "flightEnd": "2024-12-24T10:56:00.8238608Z"
+        },
+        {
+          "id": "61dc8559-3e50-4360-8710-230623a36a30",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 24054.83,
+          "flightStart": "2024-12-20T20:14:00.8238734Z",
+          "flightEnd": "2024-12-25T16:24:00.8238734Z"
+        },
+        {
+          "id": "b483c285-47bd-4178-9dee-ccb539467a2a",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 1033.67,
+          "flightStart": "2024-12-21T09:28:00.8238861Z",
+          "flightEnd": "2024-12-23T23:36:00.8238861Z"
+        },
+        {
+          "id": "4477f49f-9d29-4b45-9488-d31a4eac353c",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 43673.79,
+          "flightStart": "2024-12-17T19:54:00.8238988Z",
+          "flightEnd": "2024-12-21T01:30:00.8238988Z"
+        },
+        {
+          "id": "4c655da7-5e79-472d-aacb-e1ed90143a90",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 5891.76,
+          "flightStart": "2024-12-19T12:55:00.8239149Z",
+          "flightEnd": "2024-12-22T18:19:00.8239149Z"
+        },
+        {
+          "id": "76e688dc-8f27-4e7c-b900-b553922d6069",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 43905.27,
+          "flightStart": "2024-12-27T00:29:00.8239281Z",
+          "flightEnd": "2025-01-01T11:10:00.8239281Z"
+        },
+        {
+          "id": "7b71f98f-8cb0-49dc-8993-92d3ad765ecb",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 3914.02,
+          "flightStart": "2024-12-23T20:15:00.8239409Z",
+          "flightEnd": "2024-12-28T05:37:00.8239409Z"
+        },
+        {
+          "id": "c62d5830-7f56-4cdf-b85a-585419ea1f55",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 38549.01,
+          "flightStart": "2024-12-23T21:38:00.8239571Z",
+          "flightEnd": "2024-12-28T03:35:00.8239571Z"
+        },
+        {
+          "id": "0ee695cb-bf81-4b44-97a8-61b33410fff2",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 18260.76,
+          "flightStart": "2024-12-27T03:30:00.8239702Z",
+          "flightEnd": "2024-12-30T08:22:00.8239702Z"
+        },
+        {
+          "id": "3ab9dca8-fde0-4491-be72-0b9b80104a78",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 28061.65,
+          "flightStart": "2024-12-25T15:37:00.823983Z",
+          "flightEnd": "2024-12-31T05:20:00.823983Z"
+        },
+        {
+          "id": "0f5387a9-aff5-4f81-908e-2dfd045b2547",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 3133.69,
+          "flightStart": "2024-12-23T20:52:00.8239958Z",
+          "flightEnd": "2024-12-27T03:18:00.8239958Z"
+        },
+        {
+          "id": "9f8bcf57-8c5a-4a1a-95c1-4aa438e19164",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 26317.08,
+          "flightStart": "2024-12-24T05:04:00.8240137Z",
+          "flightEnd": "2024-12-27T21:07:00.8240137Z"
+        },
+        {
+          "id": "041a146a-079a-47d8-b39a-cf3f18a57b6a",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 22178.15,
+          "flightStart": "2024-12-21T04:10:00.8240264Z",
+          "flightEnd": "2024-12-24T06:55:00.8240264Z"
+        },
+        {
+          "id": "0c76c1a3-a4ac-497a-a584-bb81351349a1",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 15418.72,
+          "flightStart": "2024-12-25T18:04:00.8240392Z",
+          "flightEnd": "2024-12-31T10:15:00.8240392Z"
+        },
+        {
+          "id": "5c6981b8-1690-4c74-94e7-6e035d09e54a",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 22324.97,
+          "flightStart": "2024-12-31T14:13:00.8240552Z",
+          "flightEnd": "2025-01-04T13:21:00.8240552Z"
+        },
+        {
+          "id": "66e991b4-adb6-4486-a65a-c0d05478bde8",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 47522.4,
+          "flightStart": "2025-01-01T01:04:00.8240681Z",
+          "flightEnd": "2025-01-03T18:44:00.8240681Z"
+        }
+      ]
+    },
+    {
+      "id": "f608db59-428d-4f08-97bc-abc97eaf6ee8",
+      "routeInfo": {
+        "id": "ba4d89b1-5fb7-4b7f-b24d-65a65ee8ead6",
+        "from": {
+          "id": "401b39f8-c68b-477f-84dd-d29816dccf6d",
+          "name": "Venus"
+        },
+        "to": {
+          "id": "fc7a2216-3b8c-487c-8082-3cff8af77c7d",
+          "name": "Earth"
+        },
+        "distance": 41400000
+      },
+      "providers": [
+        {
+          "id": "1a97f266-26e8-4d69-b21b-17f28a9c8053",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 19960.87,
+          "flightStart": "2024-12-27T19:50:00.8240827Z",
+          "flightEnd": "2024-12-31T05:30:00.8240827Z"
+        },
+        {
+          "id": "6d0eec2a-6728-4a2a-a31a-f1c00c5aa92f",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 19084.69,
+          "flightStart": "2024-12-19T05:57:00.8240955Z",
+          "flightEnd": "2024-12-21T09:31:00.8240955Z"
+        },
+        {
+          "id": "420aa0b5-3373-438b-a33f-8ad50eb6f5a6",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 20630.18,
+          "flightStart": "2024-12-19T20:31:00.8241128Z",
+          "flightEnd": "2024-12-24T08:41:00.8241128Z"
+        },
+        {
+          "id": "ae32ca5f-b7a2-4da2-b7d1-2c63d99769c5",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 23050.81,
+          "flightStart": "2024-12-28T18:32:00.8241258Z",
+          "flightEnd": "2025-01-01T21:50:00.8241258Z"
+        },
+        {
+          "id": "ddf387b6-679f-45f1-8734-9648910e1609",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 15371.13,
+          "flightStart": "2024-12-22T17:53:00.8241387Z",
+          "flightEnd": "2024-12-26T17:34:00.8241387Z"
+        },
+        {
+          "id": "1235c063-af2c-43ac-898d-b32f08206c19",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 6201.43,
+          "flightStart": "2024-12-23T08:49:00.8241569Z",
+          "flightEnd": "2024-12-25T04:11:00.8241569Z"
+        },
+        {
+          "id": "78062e1a-854f-4134-9233-08de3d7a0690",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 27119.46,
+          "flightStart": "2024-12-26T22:29:00.8241699Z",
+          "flightEnd": "2024-12-28T21:39:00.8241699Z"
+        },
+        {
+          "id": "58fcdd24-9494-4d18-be81-1d38881b7fbd",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 11227.01,
+          "flightStart": "2024-12-21T07:39:00.8241829Z",
+          "flightEnd": "2024-12-26T09:09:00.8241829Z"
+        },
+        {
+          "id": "396b43b4-7a47-4ff0-ac0f-2506d41e72f3",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 21658.39,
+          "flightStart": "2024-12-29T14:51:00.8241956Z",
+          "flightEnd": "2025-01-03T04:57:00.8241956Z"
+        },
+        {
+          "id": "5f9c0e72-867d-4d2b-b070-e54095c6a530",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 8150.27,
+          "flightStart": "2024-12-29T09:20:00.8242117Z",
+          "flightEnd": "2024-12-31T15:45:00.8242117Z"
+        },
+        {
+          "id": "08a945d4-a43b-4688-a5b9-aab033a2f06f",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 4504.01,
+          "flightStart": "2024-12-24T21:54:00.824224Z",
+          "flightEnd": "2024-12-28T15:10:00.824224Z"
+        },
+        {
+          "id": "aeaa524f-8cf5-436a-835d-1b15f6a00357",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 37923.63,
+          "flightStart": "2024-12-21T15:17:00.8242368Z",
+          "flightEnd": "2024-12-27T13:25:00.8242368Z"
+        },
+        {
+          "id": "a21d1108-d150-4b12-8bbe-b4546674f142",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 23257.38,
+          "flightStart": "2024-12-25T07:12:00.8242534Z",
+          "flightEnd": "2024-12-28T17:47:00.8242534Z"
+        },
+        {
+          "id": "039f487c-51aa-436c-abb7-23cae66bd372",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 10570.46,
+          "flightStart": "2025-01-01T08:11:00.8242664Z",
+          "flightEnd": "2025-01-07T02:12:00.8242664Z"
+        },
+        {
+          "id": "a8ebb799-e1d4-4337-bff5-5e0b5e9a6966",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 21857.05,
+          "flightStart": "2024-12-17T13:18:00.8242793Z",
+          "flightEnd": "2024-12-20T01:38:00.8242793Z"
+        }
+      ]
+    },
+    {
+      "id": "7faddf68-52fc-44e1-b991-f65a6ce2c83a",
+      "routeInfo": {
+        "id": "e12bc6ca-9640-40a9-a5b3-f0785dfe526a",
+        "from": {
+          "id": "a0c5ddb9-98eb-4fc3-aa9c-cf82f34d06c0",
+          "name": "Mars"
+        },
+        "to": {
+          "id": "5b63658b-3a0a-4d71-a78f-69ea216781c2",
+          "name": "Venus"
+        },
+        "distance": 119740000
+      },
+      "providers": [
+        {
+          "id": "32beeb35-b575-4020-a50e-4c6fe876134d",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 87698.95,
+          "flightStart": "2024-12-24T14:24:00.8242973Z",
+          "flightEnd": "2024-12-28T16:22:00.8242973Z"
+        },
+        {
+          "id": "86c4796c-9925-4624-8325-29698493dacd",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 97876.9,
+          "flightStart": "2024-12-22T02:22:00.8243098Z",
+          "flightEnd": "2024-12-23T21:45:00.8243098Z"
+        },
+        {
+          "id": "6c9c3f95-cd24-4f4f-b1e6-8d2a5b230069",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 44110.7,
+          "flightStart": "2024-12-19T17:49:00.8243227Z",
+          "flightEnd": "2024-12-20T18:41:00.8243227Z"
+        },
+        {
+          "id": "d9ea3c5d-4cb3-4430-bf49-6dad87827b1f",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 17147.7,
+          "flightStart": "2024-12-22T01:48:00.8243353Z",
+          "flightEnd": "2024-12-26T05:33:00.8243353Z"
+        },
+        {
+          "id": "ec9a18a7-df62-464b-826c-2f6f056d33ac",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 3989.88,
+          "flightStart": "2024-12-23T21:53:00.8243519Z",
+          "flightEnd": "2024-12-26T04:07:00.8243519Z"
+        },
+        {
+          "id": "9e478a81-05cf-41ef-8be6-91054988e793",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 69894.95,
+          "flightStart": "2024-12-23T05:22:00.8243649Z",
+          "flightEnd": "2024-12-24T11:28:00.8243649Z"
+        },
+        {
+          "id": "b59c3d01-9cf6-4940-8ddd-3e69e73ad5cd",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 48591.73,
+          "flightStart": "2024-12-21T05:15:00.8243777Z",
+          "flightEnd": "2024-12-26T19:15:00.8243777Z"
+        },
+        {
+          "id": "e72ed6fd-6bf0-4002-80b1-a33bd86bd06f",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 37598.28,
+          "flightStart": "2024-12-30T06:22:00.8243952Z",
+          "flightEnd": "2024-12-31T08:42:00.8243952Z"
+        },
+        {
+          "id": "a8418210-df71-4bba-9b32-b2b5a2076343",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 32649.15,
+          "flightStart": "2024-12-24T08:37:00.8244083Z",
+          "flightEnd": "2024-12-25T18:44:00.8244083Z"
+        },
+        {
+          "id": "9477370c-86df-4466-83f7-b57f33b1c890",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 79951.97,
+          "flightStart": "2024-12-22T06:35:00.8244213Z",
+          "flightEnd": "2024-12-23T17:08:00.8244213Z"
+        },
+        {
+          "id": "e19c35e0-86e9-4406-ae59-09b609e98513",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 108525.84,
+          "flightStart": "2024-12-22T10:28:00.8244341Z",
+          "flightEnd": "2024-12-23T21:15:00.8244341Z"
+        },
+        {
+          "id": "9402c091-344e-4c62-98ce-e06a29f94920",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 19764.84,
+          "flightStart": "2024-12-27T14:19:00.8244505Z",
+          "flightEnd": "2024-12-30T08:28:00.8244505Z"
+        },
+        {
+          "id": "4a5e09e8-488e-4748-a0e1-6e6ca145187e",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 87968.58,
+          "flightStart": "2024-12-18T03:40:00.8244635Z",
+          "flightEnd": "2024-12-19T13:15:00.8244635Z"
+        },
+        {
+          "id": "e506f7ff-aab5-4502-8c44-cfad76d12588",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 97429.09,
+          "flightStart": "2024-12-26T14:27:00.8244764Z",
+          "flightEnd": "2024-12-29T22:37:00.8244764Z"
+        },
+        {
+          "id": "bcae16a8-dd38-4eee-8ea5-01245e17528f",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 80.81,
+          "flightStart": "2024-12-31T11:47:00.8244927Z",
+          "flightEnd": "2025-01-06T05:47:00.8244927Z"
+        }
+      ]
+    },
+    {
+      "id": "edc26ee5-f635-44b3-9b91-0b0f40017715",
+      "routeInfo": {
+        "id": "8c2e6b69-c5b8-4ada-b0ca-eb75bd2e4c37",
+        "from": {
+          "id": "b82801d8-b65c-4fe7-9169-3c89fd8f2b5a",
+          "name": "Jupiter"
+        },
+        "to": {
+          "id": "d33a03c5-067b-480d-bc6d-70739974d50b",
+          "name": "Mars"
+        },
+        "distance": 550390000
+      },
+      "providers": [
+        {
+          "id": "c32898c4-d4cf-4e92-bf62-eb21d55233fd",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 247929.53,
+          "flightStart": "2024-12-31T15:14:00.8245074Z",
+          "flightEnd": "2025-01-04T22:50:00.8245074Z"
+        },
+        {
+          "id": "c7d22307-318c-460f-ac70-b1ba837c04ab",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 156054.5,
+          "flightStart": "2024-12-23T04:43:00.8245202Z",
+          "flightEnd": "2024-12-28T08:56:00.8245202Z"
+        },
+        {
+          "id": "5645b9c1-c5ca-4cbd-89dd-64614c3d13fb",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 519324.32,
+          "flightStart": "2024-12-19T16:13:00.824533Z",
+          "flightEnd": "2024-12-21T23:45:00.824533Z"
+        },
+        {
+          "id": "9f1e948c-c8df-43c1-93a4-c87c416b7d11",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 122035.32,
+          "flightStart": "2024-12-29T12:42:00.8245509Z",
+          "flightEnd": "2024-12-31T14:22:00.8245509Z"
+        },
+        {
+          "id": "a6a902dc-9e12-428f-bec9-c69ca6e47e5b",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 431559.75,
+          "flightStart": "2024-12-29T21:20:00.8245635Z",
+          "flightEnd": "2024-12-31T07:08:00.8245635Z"
+        },
+        {
+          "id": "05ec612d-e908-4922-98b4-93d67fc2484d",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 135298.24,
+          "flightStart": "2024-12-18T12:53:00.8245763Z",
+          "flightEnd": "2024-12-21T08:48:00.8245763Z"
+        },
+        {
+          "id": "875405a1-e45d-46a1-b5f8-5f9c6353a585",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 271956.53,
+          "flightStart": "2024-12-30T04:31:00.8245928Z",
+          "flightEnd": "2025-01-02T11:20:00.8245928Z"
+        },
+        {
+          "id": "4a46a303-300e-4acf-94d7-71e8772530df",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 94585.36,
+          "flightStart": "2024-12-27T01:48:00.8246056Z",
+          "flightEnd": "2024-12-28T21:08:00.8246056Z"
+        },
+        {
+          "id": "6258db2c-7e79-4201-84bb-e5143157d686",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 235973.07,
+          "flightStart": "2024-12-26T23:52:00.8246185Z",
+          "flightEnd": "2024-12-30T18:54:00.8246185Z"
+        },
+        {
+          "id": "2eb3abff-7b94-4c1b-ba9a-79060e52ef5b",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 58734.73,
+          "flightStart": "2024-12-30T01:04:00.8246313Z",
+          "flightEnd": "2024-12-31T14:48:00.8246313Z"
+        },
+        {
+          "id": "0facab55-378d-4a97-b4c2-9fd0148c2e44",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 357588.08,
+          "flightStart": "2024-12-22T05:20:00.8246482Z",
+          "flightEnd": "2024-12-23T08:17:00.8246482Z"
+        },
+        {
+          "id": "ed330583-64f7-45e4-a487-e55ccda4ac00",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 420952.63,
+          "flightStart": "2024-12-21T04:25:00.8246608Z",
+          "flightEnd": "2024-12-25T03:11:00.8246608Z"
+        },
+        {
+          "id": "591e7c48-d169-4dcd-b540-7b74ef81e023",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 266019.25,
+          "flightStart": "2024-12-29T11:31:00.8246734Z",
+          "flightEnd": "2024-12-31T11:10:00.8246734Z"
+        },
+        {
+          "id": "b2e05fb9-1398-4f91-a0c4-2287f3ca9259",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 303015.36,
+          "flightStart": "2024-12-19T10:37:00.8246896Z",
+          "flightEnd": "2024-12-23T02:11:00.8246896Z"
+        },
+        {
+          "id": "7790d40b-f1de-44e5-b4c3-fa1a48d30033",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 345201.25,
+          "flightStart": "2024-12-20T04:37:00.82478Z",
+          "flightEnd": "2024-12-25T02:13:00.82478Z"
+        }
+      ]
+    },
+    {
+      "id": "15df58d2-d95a-4c3b-a745-8496ccd2e8fa",
+      "routeInfo": {
+        "id": "c81f0ce5-512d-4a2d-8d78-fd7a7392fded",
+        "from": {
+          "id": "907e5759-f53e-41cb-b1ea-37b8cfa29829",
+          "name": "Jupiter"
+        },
+        "to": {
+          "id": "88760ce6-baa0-4329-9ecc-2264ce649c65",
+          "name": "Venus"
+        },
+        "distance": 670130000
+      },
+      "providers": [
+        {
+          "id": "b800aafb-ef45-4611-8eef-2fb2271ffd86",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 638745.81,
+          "flightStart": "2024-12-27T12:03:00.8247947Z",
+          "flightEnd": "2024-12-30T22:56:00.8247947Z"
+        },
+        {
+          "id": "e14c248c-d42d-4e05-9096-2c676584a317",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 51214.34,
+          "flightStart": "2024-12-19T11:30:00.8248077Z",
+          "flightEnd": "2024-12-21T05:53:00.8248077Z"
+        },
+        {
+          "id": "0c5261fe-e583-4b04-b20b-a03b65683381",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 51350.35,
+          "flightStart": "2024-12-22T05:04:00.8248276Z",
+          "flightEnd": "2024-12-24T16:53:00.8248276Z"
+        },
+        {
+          "id": "222d3f27-a145-49c7-bc2b-57b0d5890f39",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 65257.16,
+          "flightStart": "2024-12-21T16:10:00.8248405Z",
+          "flightEnd": "2024-12-22T18:27:00.8248405Z"
+        },
+        {
+          "id": "b56daa4c-cec2-4d01-9600-75f99ce1fd2c",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 432895.81,
+          "flightStart": "2024-12-27T08:16:00.8248531Z",
+          "flightEnd": "2024-12-29T15:00:00.8248531Z"
+        },
+        {
+          "id": "56721311-c66c-4870-989b-59913cecb82b",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 511604.36,
+          "flightStart": "2024-12-22T15:27:00.8248698Z",
+          "flightEnd": "2024-12-25T08:38:00.8248698Z"
+        },
+        {
+          "id": "ebb90241-94a1-4bbf-bf7c-2667b5a9264c",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 8039.59,
+          "flightStart": "2024-12-28T22:30:00.8248823Z",
+          "flightEnd": "2025-01-02T21:22:00.8248823Z"
+        },
+        {
+          "id": "48a64d87-02ca-4c91-bcb9-830dd592a42b",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 356808.65,
+          "flightStart": "2024-12-22T00:07:00.8248948Z",
+          "flightEnd": "2024-12-23T15:33:00.8248948Z"
+        },
+        {
+          "id": "511a4d8f-1dd3-4efc-ab24-5cea40a1796b",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 371962.53,
+          "flightStart": "2024-12-29T21:26:00.8249075Z",
+          "flightEnd": "2025-01-02T23:09:00.8249075Z"
+        },
+        {
+          "id": "4ee895dd-45e8-417a-9566-8b3f77db7574",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 205872.78,
+          "flightStart": "2024-12-18T08:48:00.824924Z",
+          "flightEnd": "2024-12-19T15:36:00.824924Z"
+        }
+      ]
+    },
+    {
+      "id": "faa747c0-089f-4404-87c9-3321572c2883",
+      "routeInfo": {
+        "id": "06655c4e-9fbd-447d-83b7-8c3485c1c190",
+        "from": {
+          "id": "6f5cb7f3-ed5a-4a07-9aee-40c2deb3e3e2",
+          "name": "Saturn"
+        },
+        "to": {
+          "id": "5a770a32-08ae-4a02-a3fc-6bbef51dace7",
+          "name": "Earth"
+        },
+        "distance": 1275000000
+      },
+      "providers": [
+        {
+          "id": "bc93cea9-0a5a-4908-bb85-49dfe256a5cd",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 982855.64,
+          "flightStart": "2024-12-27T12:34:00.8249387Z",
+          "flightEnd": "2025-01-01T12:00:00.8249387Z"
+        },
+        {
+          "id": "05fb7a0e-d1c0-4073-9d44-ef3c87e63982",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 472422.13,
+          "flightStart": "2024-12-22T07:42:00.8249516Z",
+          "flightEnd": "2024-12-25T10:32:00.8249516Z"
+        },
+        {
+          "id": "b254b6bb-135e-4d63-8d96-3d24dde3d7b7",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 198889.83,
+          "flightStart": "2024-12-23T17:15:00.8249677Z",
+          "flightEnd": "2024-12-27T21:56:00.8249677Z"
+        },
+        {
+          "id": "1959047c-343f-4d98-a913-5daa869adb16",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 804295.72,
+          "flightStart": "2024-12-27T21:00:00.8249804Z",
+          "flightEnd": "2025-01-02T18:58:00.8249804Z"
+        },
+        {
+          "id": "e71937ea-d445-4676-9eab-a8333693419e",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 153161.85,
+          "flightStart": "2024-12-29T11:53:00.8249932Z",
+          "flightEnd": "2024-12-30T13:27:00.8249932Z"
+        },
+        {
+          "id": "95f845c0-3185-4993-98c2-d6007ee6ccd3",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 858581.44,
+          "flightStart": "2024-12-24T11:42:00.8250121Z",
+          "flightEnd": "2024-12-29T06:11:00.8250121Z"
+        },
+        {
+          "id": "06cb5e0e-969a-45ff-8966-f2d4d80f6734",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 921651.19,
+          "flightStart": "2024-12-27T02:46:00.825025Z",
+          "flightEnd": "2024-12-29T21:39:00.825025Z"
+        },
+        {
+          "id": "0d196285-079f-4a29-96cf-5a78c15d079e",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 929525.22,
+          "flightStart": "2024-12-31T23:54:00.8250382Z",
+          "flightEnd": "2025-01-03T08:07:00.8250382Z"
+        },
+        {
+          "id": "1c85c073-4b84-4171-ba99-23d57fe3ed2f",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 25062.86,
+          "flightStart": "2024-12-21T14:40:00.825051Z",
+          "flightEnd": "2024-12-27T11:55:00.825051Z"
+        },
+        {
+          "id": "47696ae3-9ce4-4dcd-91a3-0d44f141225f",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 753732.42,
+          "flightStart": "2024-12-23T15:09:00.8250679Z",
+          "flightEnd": "2024-12-29T13:00:00.8250679Z"
+        }
+      ]
+    },
+    {
+      "id": "7f414497-5716-479f-9bb9-1561dff4a086",
+      "routeInfo": {
+        "id": "39082f0a-1198-4c1c-ba3a-19db0621d93d",
+        "from": {
+          "id": "b8e545b6-016d-4536-b400-140b815869fa",
+          "name": "Saturn"
+        },
+        "to": {
+          "id": "74a23ddd-c43a-4a88-bbb6-2d0c3fdac971",
+          "name": "Neptune"
+        },
+        "distance": 3076400000
+      },
+      "providers": [
+        {
+          "id": "6a09868b-ebc2-4f76-b856-cf3bd082731a",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 1401981.05,
+          "flightStart": "2024-12-29T14:11:00.8250824Z",
+          "flightEnd": "2024-12-31T05:16:00.8250824Z"
+        },
+        {
+          "id": "5c3b652c-bb2e-40aa-b1ff-e73725bbe8bc",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 1211593.79,
+          "flightStart": "2024-12-28T08:31:00.8250953Z",
+          "flightEnd": "2025-01-01T06:33:00.8250953Z"
+        },
+        {
+          "id": "ac7d872b-5f45-4e83-be4b-5d82388fb448",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 1585901.9,
+          "flightStart": "2024-12-20T13:35:00.8251115Z",
+          "flightEnd": "2024-12-25T02:09:00.8251115Z"
+        },
+        {
+          "id": "9c03cdbc-6208-4528-9550-2802cbe691fb",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 1642994.65,
+          "flightStart": "2024-12-28T02:34:00.8251246Z",
+          "flightEnd": "2025-01-01T06:07:00.8251246Z"
+        },
+        {
+          "id": "c67aba3e-f618-4ea6-9245-a305fa18ac66",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 1845472.56,
+          "flightStart": "2024-12-24T02:28:00.8251373Z",
+          "flightEnd": "2024-12-30T01:05:00.8251373Z"
+        },
+        {
+          "id": "99ca362c-d46f-4b66-bd8d-ff7d1cf67694",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 2305054.95,
+          "flightStart": "2024-12-25T17:07:00.8251502Z",
+          "flightEnd": "2024-12-26T22:50:00.8251502Z"
+        },
+        {
+          "id": "81976e4a-5641-4c8d-ad0b-5cec21ec5da5",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 2461618.15,
+          "flightStart": "2024-12-27T14:36:00.8251664Z",
+          "flightEnd": "2024-12-31T13:32:00.8251664Z"
+        },
+        {
+          "id": "4cbd2622-228b-4576-9ede-e5aa438fc0e2",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 2996094.02,
+          "flightStart": "2024-12-26T16:20:00.8251791Z",
+          "flightEnd": "2024-12-31T03:02:00.8251791Z"
+        },
+        {
+          "id": "3273e47c-5e80-4bd0-a478-744d404b8351",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 2638817.68,
+          "flightStart": "2024-12-28T23:03:00.8251919Z",
+          "flightEnd": "2024-12-30T10:50:00.8251919Z"
+        },
+        {
+          "id": "55dc2a4b-6075-44fa-89da-34d6081aa976",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 993045.99,
+          "flightStart": "2024-12-23T21:07:00.8252097Z",
+          "flightEnd": "2024-12-25T05:51:00.8252097Z"
+        },
+        {
+          "id": "d9cb863f-eb7d-41de-bd24-a0e478853a56",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 2200161.85,
+          "flightStart": "2024-12-19T19:51:00.8252224Z",
+          "flightEnd": "2024-12-24T15:55:00.8252224Z"
+        },
+        {
+          "id": "32a438f3-cefd-4b85-85fc-39c75884061d",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 760044.6,
+          "flightStart": "2024-12-26T13:09:00.8252351Z",
+          "flightEnd": "2024-12-29T17:27:00.8252351Z"
+        },
+        {
+          "id": "5747fda0-e19b-4973-bb1e-0a83fc22d067",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1797248.15,
+          "flightStart": "2024-12-31T07:17:00.8252477Z",
+          "flightEnd": "2025-01-03T22:08:00.8252477Z"
+        },
+        {
+          "id": "d8eebb10-512d-46d2-b354-a69a1fb146b8",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 2004040.47,
+          "flightStart": "2024-12-26T07:59:00.8252646Z",
+          "flightEnd": "2024-12-29T01:20:00.8252646Z"
+        },
+        {
+          "id": "975b95e9-3431-4fb0-baee-62736bd84e37",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 2003916.84,
+          "flightStart": "2024-12-29T15:33:00.8252775Z",
+          "flightEnd": "2025-01-04T10:32:00.8252775Z"
+        }
+      ]
+    },
+    {
+      "id": "ce610c03-9632-48fe-80dc-7d61b46cb3c2",
+      "routeInfo": {
+        "id": "cea1bd13-2c42-495b-af17-ede553c5409d",
+        "from": {
+          "id": "02e7814b-0bd5-4bcb-b55a-0d039c27de76",
+          "name": "Uranus"
+        },
+        "to": {
+          "id": "a438636a-99d1-4526-b353-f67e68664619",
+          "name": "Saturn"
+        },
+        "distance": 1448950000
+      },
+      "providers": [
+        {
+          "id": "95eef56a-1f46-4230-87da-035a1d6fe82f",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 1146800.27,
+          "flightStart": "2024-12-22T14:23:00.8252919Z",
+          "flightEnd": "2024-12-26T04:13:00.8252919Z"
+        },
+        {
+          "id": "ef72ab39-7e8d-4a49-8feb-f60539685a8f",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 65087.28,
+          "flightStart": "2024-12-18T08:30:00.8253082Z",
+          "flightEnd": "2024-12-20T16:21:00.8253082Z"
+        },
+        {
+          "id": "faad78b9-2ba6-4172-85e3-a588da0d273a",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1442279.71,
+          "flightStart": "2024-12-29T09:58:00.8253212Z",
+          "flightEnd": "2024-12-31T05:11:00.8253212Z"
+        },
+        {
+          "id": "348c76be-ef7a-4d5f-bd93-83b91db2e628",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 611203.94,
+          "flightStart": "2024-12-17T20:58:00.825334Z",
+          "flightEnd": "2024-12-22T18:30:00.825334Z"
+        },
+        {
+          "id": "7d907198-3da7-48eb-b28a-5aba96ee4ac5",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 1156920.69,
+          "flightStart": "2024-12-23T22:10:00.8253467Z",
+          "flightEnd": "2024-12-27T11:58:00.8253467Z"
+        },
+        {
+          "id": "15423785-45b5-4b6e-a94a-d2121b0a001a",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 1010281.1,
+          "flightStart": "2024-12-28T11:36:00.8253629Z",
+          "flightEnd": "2024-12-31T04:36:00.8253629Z"
+        },
+        {
+          "id": "d575a8eb-4cd6-47ad-949c-e785309d0fd5",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 33267.9,
+          "flightStart": "2024-12-19T02:57:00.8253754Z",
+          "flightEnd": "2024-12-24T19:03:00.8253754Z"
+        },
+        {
+          "id": "661204df-4773-4445-82da-faa657eff5ac",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 1219195.8,
+          "flightStart": "2024-12-29T23:28:00.8254972Z",
+          "flightEnd": "2025-01-04T19:21:00.8254972Z"
+        },
+        {
+          "id": "33a8d3f3-f075-474a-8d13-6efd2b85104e",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 349777.77,
+          "flightStart": "2024-12-30T17:51:00.8255185Z",
+          "flightEnd": "2025-01-04T08:06:00.8255185Z"
+        },
+        {
+          "id": "4a7e81b7-bf40-4c60-9deb-5764b9fa49e2",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 956157.24,
+          "flightStart": "2024-12-31T07:15:00.8255316Z",
+          "flightEnd": "2025-01-03T19:45:00.8255316Z"
+        },
+        {
+          "id": "86de2620-61d4-4e45-89c7-5244d6ab3e03",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 1075728.03,
+          "flightStart": "2024-12-28T23:32:00.8255442Z",
+          "flightEnd": "2024-12-30T12:06:00.8255442Z"
+        },
+        {
+          "id": "69ff8a38-7a38-474a-a015-1a7d889667bc",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 64634.03,
+          "flightStart": "2024-12-24T08:35:00.8255567Z",
+          "flightEnd": "2024-12-28T15:07:00.8255567Z"
+        },
+        {
+          "id": "e01b8c63-8a8b-40e9-9f66-4e20b073b5c0",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 741928.66,
+          "flightStart": "2024-12-30T09:15:00.825573Z",
+          "flightEnd": "2025-01-01T10:39:00.825573Z"
+        },
+        {
+          "id": "2a5d0fb4-96be-49d7-af83-e02cb6640b25",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 770480.25,
+          "flightStart": "2024-12-20T07:49:00.8255858Z",
+          "flightEnd": "2024-12-24T02:41:00.8255858Z"
+        },
+        {
+          "id": "ce78fdd1-f4d4-44ae-99d5-7a352f4fda50",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 50826.35,
+          "flightStart": "2024-12-29T19:03:00.8255985Z",
+          "flightEnd": "2024-12-31T01:35:00.8255985Z"
+        },
+        {
+          "id": "343ea9d6-5428-4d7b-b2df-734fc880148e",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 89059.34,
+          "flightStart": "2024-12-18T21:05:00.8256152Z",
+          "flightEnd": "2024-12-22T11:10:00.8256152Z"
+        },
+        {
+          "id": "597df232-f2cb-4482-9574-f6730d6634aa",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 138734.36,
+          "flightStart": "2024-12-30T18:38:00.8256278Z",
+          "flightEnd": "2025-01-01T23:31:00.8256278Z"
+        }
+      ]
+    },
+    {
+      "id": "2ce0d4ae-454f-4752-8e64-0c26b98cf97d",
+      "routeInfo": {
+        "id": "e98f34cb-8fe9-412e-9924-423b5a4caada",
+        "from": {
+          "id": "3ecb2bf3-f81f-40d6-8b4c-929593531318",
+          "name": "Uranus"
+        },
+        "to": {
+          "id": "6a32d27d-2444-4280-a3f9-bb102ce8661e",
+          "name": "Neptune"
+        },
+        "distance": 1627450000
+      },
+      "providers": [
+        {
+          "id": "7d33d98b-d5a2-41c7-ac8d-45310e16e257",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 114907.24,
+          "flightStart": "2024-12-26T02:37:00.8256425Z",
+          "flightEnd": "2024-12-31T02:36:00.8256425Z"
+        },
+        {
+          "id": "ad98a0f8-9a09-41a8-836c-a88d3ef6c67d",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 900274.72,
+          "flightStart": "2024-12-19T04:55:00.8256608Z",
+          "flightEnd": "2024-12-21T12:53:00.8256608Z"
+        },
+        {
+          "id": "c510ca9a-544b-4924-ba04-8b454d086adc",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 285945.47,
+          "flightStart": "2024-12-28T08:39:00.8256739Z",
+          "flightEnd": "2024-12-30T17:18:00.8256739Z"
+        },
+        {
+          "id": "8158ccc6-5607-4bc0-a781-883706bbd594",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 675906.91,
+          "flightStart": "2024-12-20T22:25:00.8256866Z",
+          "flightEnd": "2024-12-22T07:59:00.8256866Z"
+        },
+        {
+          "id": "c14cbafa-0242-4591-a666-b11c2735b897",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 955208.36,
+          "flightStart": "2024-12-25T04:38:00.8256995Z",
+          "flightEnd": "2024-12-29T21:44:00.8256995Z"
+        },
+        {
+          "id": "97fc2180-988c-43a5-8118-71f37c0daf27",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 126854.43,
+          "flightStart": "2024-12-22T03:27:00.825716Z",
+          "flightEnd": "2024-12-23T06:52:00.825716Z"
+        },
+        {
+          "id": "a6a44161-1af8-4db1-b2dc-c62bdb33e3cf",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 47039.95,
+          "flightStart": "2024-12-19T10:23:00.8257287Z",
+          "flightEnd": "2024-12-24T02:59:00.8257287Z"
+        },
+        {
+          "id": "36260231-7fce-4815-b13b-7ce3c2eebbba",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 998040.88,
+          "flightStart": "2024-12-26T05:21:00.8257417Z",
+          "flightEnd": "2024-12-28T17:13:00.8257417Z"
+        },
+        {
+          "id": "140eec37-4110-4b91-8519-53291d4a7a3d",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 365697.13,
+          "flightStart": "2024-12-29T08:50:00.8257547Z",
+          "flightEnd": "2024-12-31T13:57:00.8257547Z"
+        },
+        {
+          "id": "f885c8a4-c91e-4d1e-8488-ca7eddb90c9a",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 547696.1,
+          "flightStart": "2024-12-28T14:49:00.8257716Z",
+          "flightEnd": "2024-12-31T18:12:00.8257716Z"
+        },
+        {
+          "id": "38ffb5ed-ddfa-4493-b395-c63e23f1b4f3",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 908353.08,
+          "flightStart": "2024-12-30T10:57:00.8257842Z",
+          "flightEnd": "2024-12-31T13:35:00.8257842Z"
+        },
+        {
+          "id": "f8ce5b9d-8be9-449c-b182-00f5fd04f243",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 989998.93,
+          "flightStart": "2024-12-18T02:01:00.825797Z",
+          "flightEnd": "2024-12-22T18:18:00.825797Z"
+        },
+        {
+          "id": "1ac475f1-117d-4153-b68b-26e422e805be",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 303345.93,
+          "flightStart": "2024-12-25T06:18:00.8258139Z",
+          "flightEnd": "2024-12-30T19:00:00.8258139Z"
+        }
+      ]
+    },
+    {
+      "id": "e9a2de87-e28b-4392-ad88-956db536fb77",
+      "routeInfo": {
+        "id": "cdbbb05b-f60b-4661-a3e5-fde5c7a97da4",
+        "from": {
+          "id": "7987de47-3b85-4c81-afed-b73f2264170d",
+          "name": "Neptune"
+        },
+        "to": {
+          "id": "49065bf5-c5ea-4462-8340-9d549436f3c6",
+          "name": "Uranus"
+        },
+        "distance": 1627450000
+      },
+      "providers": [
+        {
+          "id": "358c4836-ea4f-42b3-8cf8-b055fc74485e",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 797977.56,
+          "flightStart": "2024-12-26T05:29:00.8258284Z",
+          "flightEnd": "2024-12-30T22:41:00.8258284Z"
+        },
+        {
+          "id": "e04a4040-9106-4faa-ae43-74c3a508c6fe",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 739506.74,
+          "flightStart": "2024-12-21T16:29:00.8258747Z",
+          "flightEnd": "2024-12-27T03:19:00.8258747Z"
+        },
+        {
+          "id": "e9c8a85d-d2f2-406e-91c2-ef01efc9343d",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 1543993.14,
+          "flightStart": "2024-12-28T13:36:00.8258976Z",
+          "flightEnd": "2024-12-29T16:59:00.8258976Z"
+        },
+        {
+          "id": "1e69687a-ee04-4d3b-91a4-65c61e9cba46",
+          "company": {
+            "id": "7cfb37f6-5f6c-4f30-b69f-febc3cb0d9b1",
+            "name": "Galaxy Express"
+          },
+          "price": 838531.8,
+          "flightStart": "2024-12-20T04:17:00.8259104Z",
+          "flightEnd": "2024-12-21T22:03:00.8259104Z"
+        },
+        {
+          "id": "80cfade1-83bb-48a3-860f-fe69253782e9",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 236357.09,
+          "flightStart": "2024-12-28T22:27:00.8259231Z",
+          "flightEnd": "2025-01-02T00:05:00.8259231Z"
+        },
+        {
+          "id": "bc4ccdde-8e31-49b8-b90c-42f4b9a71775",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 126116.03,
+          "flightStart": "2024-12-26T12:17:00.8259361Z",
+          "flightEnd": "2025-01-01T05:21:00.8259361Z"
+        },
+        {
+          "id": "f2eced60-77e0-4cad-8acc-73a509f17cae",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 1040715.34,
+          "flightStart": "2025-01-01T06:40:00.8259558Z",
+          "flightEnd": "2025-01-04T02:05:00.8259558Z"
+        },
+        {
+          "id": "ef843696-e59b-43fa-881c-be59568e7d15",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1508430.53,
+          "flightStart": "2024-12-22T00:26:00.8259685Z",
+          "flightEnd": "2024-12-26T21:01:00.8259685Z"
+        },
+        {
+          "id": "8bb0efb1-b47c-484d-9b9f-51d013028378",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 441191.62,
+          "flightStart": "2024-12-19T09:00:00.8259811Z",
+          "flightEnd": "2024-12-23T16:57:00.8259811Z"
+        },
+        {
+          "id": "448be188-d703-44bb-8974-1104c4aeb681",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 1377140.46,
+          "flightStart": "2024-12-28T13:17:00.8260324Z",
+          "flightEnd": "2025-01-02T13:22:00.8260324Z"
+        },
+        {
+          "id": "34661ffb-11ca-4298-9bc6-86b3ec167a70",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 1338980.02,
+          "flightStart": "2024-12-26T16:57:00.8260462Z",
+          "flightEnd": "2024-12-30T17:08:00.8260462Z"
+        },
+        {
+          "id": "939efaa7-417e-4c06-a69c-e1485c185959",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 66728.36,
+          "flightStart": "2024-12-18T13:14:00.826059Z",
+          "flightEnd": "2024-12-20T16:12:00.826059Z"
+        },
+        {
+          "id": "da637f9d-b032-428d-b1ff-d97eb99432d6",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 1271485.42,
+          "flightStart": "2024-12-22T00:40:00.8260719Z",
+          "flightEnd": "2024-12-26T00:25:00.8260719Z"
+        },
+        {
+          "id": "ff882863-e81e-41fd-8c32-d84c64366b8e",
+          "company": {
+            "id": "2748a7e5-616a-4462-98bd-327b726b2825",
+            "name": "SpaceX"
+          },
+          "price": 1233805.79,
+          "flightStart": "2024-12-30T20:32:00.8260885Z",
+          "flightEnd": "2025-01-02T22:26:00.8260885Z"
+        },
+        {
+          "id": "3e5b6ee2-0ff7-4746-8529-b67afb812964",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 1527694.31,
+          "flightStart": "2024-12-28T16:03:00.8261013Z",
+          "flightEnd": "2024-12-31T05:30:00.8261013Z"
+        }
+      ]
+    },
+    {
+      "id": "b76e5eda-e386-483a-a052-3e76c003d020",
+      "routeInfo": {
+        "id": "80c10f7c-620e-4647-862c-2a5f1fc72044",
+        "from": {
+          "id": "2ae15950-416e-43a9-b4b7-96117d279a3f",
+          "name": "Neptune"
+        },
+        "to": {
+          "id": "b824ed32-fe5d-40af-a33c-eafe746c8496",
+          "name": "Mercury"
+        },
+        "distance": 4443090000
+      },
+      "providers": [
+        {
+          "id": "e2d7714f-c2d9-4b2a-9012-c861e55792da",
+          "company": {
+            "id": "4e7f1cae-deaa-4a64-8a36-5fc2af8e1368",
+            "name": "Space Voyager"
+          },
+          "price": 2440815.47,
+          "flightStart": "2024-12-24T22:11:00.8261157Z",
+          "flightEnd": "2024-12-28T22:38:00.8261157Z"
+        },
+        {
+          "id": "33259447-c104-4e85-b978-9520561f175c",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 3653459.34,
+          "flightStart": "2024-12-17T19:24:00.8261348Z",
+          "flightEnd": "2024-12-20T10:57:00.8261348Z"
+        },
+        {
+          "id": "fe90a92a-187b-4d37-8ea4-f06584aaede9",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 3834306.67,
+          "flightStart": "2024-12-28T00:35:00.8261486Z",
+          "flightEnd": "2024-12-31T08:17:00.8261486Z"
+        },
+        {
+          "id": "ca1a4f6c-b379-46eb-b1d1-9d9bb9f98639",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 660197.31,
+          "flightStart": "2024-12-29T18:53:00.8261615Z",
+          "flightEnd": "2025-01-04T02:49:00.8261615Z"
+        },
+        {
+          "id": "abdc4d84-1cf5-4f33-893a-14745d478140",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 1313527.1,
+          "flightStart": "2024-12-26T06:24:00.8261742Z",
+          "flightEnd": "2024-12-28T01:15:00.8261742Z"
+        },
+        {
+          "id": "a0321277-d8bc-42a0-b563-f93c0b23ab88",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 2779107.11,
+          "flightStart": "2024-12-25T21:56:00.826191Z",
+          "flightEnd": "2024-12-28T01:15:00.826191Z"
+        },
+        {
+          "id": "60e0d0e1-13f4-4c7b-a9d1-285b9a75d36e",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 1403076.6,
+          "flightStart": "2024-12-17T17:46:00.8262038Z",
+          "flightEnd": "2024-12-22T01:31:00.8262038Z"
+        },
+        {
+          "id": "515d35be-1642-44cb-a461-8910ed6908e9",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 2312472.17,
+          "flightStart": "2024-12-21T01:43:00.8262166Z",
+          "flightEnd": "2024-12-24T13:06:00.8262166Z"
+        },
+        {
+          "id": "2b799034-fdf6-473c-b572-0b0c3472386d",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 3688725.9,
+          "flightStart": "2024-12-25T03:41:00.8262328Z",
+          "flightEnd": "2024-12-28T04:53:00.8262328Z"
+        },
+        {
+          "id": "f314e36d-50c5-49bd-8d02-c71237287ef3",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 2667603.14,
+          "flightStart": "2024-12-27T23:57:00.8262455Z",
+          "flightEnd": "2025-01-01T16:14:00.8262455Z"
+        },
+        {
+          "id": "18af2650-42dc-4224-b53c-d309afbaeb56",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 1052388.53,
+          "flightStart": "2024-12-19T14:45:00.8262581Z",
+          "flightEnd": "2024-12-23T17:23:00.8262581Z"
+        },
+        {
+          "id": "f67d73fb-48ca-43c9-aebe-d616f39dd6d3",
+          "company": {
+            "id": "07e26983-dfc6-4143-905b-fd428d9c803a",
+            "name": "Travel Nova"
+          },
+          "price": 2454766.85,
+          "flightStart": "2024-12-24T21:49:00.8262707Z",
+          "flightEnd": "2024-12-29T23:38:00.8262707Z"
+        },
+        {
+          "id": "95c367a4-a0a9-4ee6-9c71-7ac07b567bd8",
+          "company": {
+            "id": "39bb5ca9-ef16-4772-b202-a775a0350587",
+            "name": "Spacegenix"
+          },
+          "price": 3891226.08,
+          "flightStart": "2024-12-31T03:47:00.8262873Z",
+          "flightEnd": "2025-01-02T17:45:00.8262873Z"
+        },
+        {
+          "id": "4b635b57-55f4-44b1-9e66-436520e35346",
+          "company": {
+            "id": "635e77f8-74e9-487f-b00e-92bcb24a2661",
+            "name": "Explore Dynamite"
+          },
+          "price": 2352614.4,
+          "flightStart": "2024-12-20T04:53:00.8263003Z",
+          "flightEnd": "2024-12-23T21:57:00.8263003Z"
+        },
+        {
+          "id": "7f59e3ac-2159-4bc4-b591-d93e0be8419a",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 2891269.2,
+          "flightStart": "2024-12-25T12:14:00.8263128Z",
+          "flightEnd": "2024-12-27T01:23:00.8263128Z"
+        },
+        {
+          "id": "e436efa9-3981-4c22-a745-0f0d6d59595b",
+          "company": {
+            "id": "8b414f08-69dd-4c73-bd2a-4222b8b6de4e",
+            "name": "Spacelux"
+          },
+          "price": 2470368.83,
+          "flightStart": "2024-12-27T03:59:00.8263287Z",
+          "flightEnd": "2024-12-29T11:34:00.8263287Z"
+        },
+        {
+          "id": "7794bf1e-6ceb-47aa-8472-ce2135edbdb5",
+          "company": {
+            "id": "19873f1a-9996-46b5-9ef7-0f5e3ae23c2f",
+            "name": "Space Odyssey"
+          },
+          "price": 2616056.72,
+          "flightStart": "2024-12-23T02:40:00.8263416Z",
+          "flightEnd": "2024-12-27T12:53:00.8263416Z"
+        },
+        {
+          "id": "0067047b-02e1-4534-9c4e-a545df26b5be",
+          "company": {
+            "id": "ee9b52a1-5de6-416a-bff2-7cbcc438cdc7",
+            "name": "Space Piper"
+          },
+          "price": 4098282.37,
+          "flightStart": "2024-12-30T06:33:00.8263544Z",
+          "flightEnd": "2024-12-31T23:28:00.8263544Z"
+        },
+        {
+          "id": "f3bdab56-97ab-41f9-97cf-25101cf2e94b",
+          "company": {
+            "id": "c2c22185-80a6-43e9-8a00-ed42ebbf1b59",
+            "name": "Explore Origin"
+          },
+          "price": 735629.78,
+          "flightStart": "2024-12-26T04:18:00.8263669Z",
+          "flightEnd": "2024-12-30T16:45:00.8263669Z"
+        }
+      ]
+    }
+  ]
+}
