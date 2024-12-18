@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import fetchData from '../utils/ApiList';
 import { getLegs, getRoutesInfo, getProviders } from '../utils/DataParser';
-import { findCheapRoutes } from '../utils/RouteFinder';
+import { findAllRoutes } from '../utils/RouteFinder';
 import { getTopRoutes } from '../utils/TopRoutes';
 import TravelForm from '../components/TravelForm';
 import FilterSortDropdowns from '../components/FilterSortDropdowns';
@@ -37,33 +37,38 @@ const TravelRoutes = () => {
 
   const handleSearchRoutes = (e) => {
     e.preventDefault();
-
+  
     if (!selectedPlanet || !selectedEndPlanet) {
       alert('Please select a location and destination!');
       return;
     }
-
+  
     if (!firstName || !lastName) {
       alert('Please enter your first and last name!');
       return;
     }
-
+  
     if (selectedPlanet === selectedEndPlanet) {
       alert('Please select a different destination!');
       return;
     }
-
-    // Finding the best routes
-    console.log('Finding best routes...');
-    const cheapRoutes = findCheapRoutes(routeInfos, providers, selectedPlanet, selectedEndPlanet);
-    console.log('Best Routes:', cheapRoutes);
-
-    const topRoutes = getTopRoutes(cheapRoutes, 30);  // Use the imported getTopRoutes function
-    console.log('Top Routes:', topRoutes);
-
-    setFilteredRoutes(topRoutes);
+  
+    const allRoutes = findAllRoutes(routeInfos, providers, selectedPlanet, selectedEndPlanet);
+  
+    let filteredRoutes = getTopRoutes(allRoutes);
+  
+    if (sortBy === 'totalPrice') {
+      filteredRoutes.sort((a, b) => a.totalPrice - b.totalPrice);
+    } else if (sortBy === 'totalTravelTime') {
+      filteredRoutes.sort((a, b) => a.duration - b.duration);
+    } else if (sortBy === 'totalDistance') {
+      filteredRoutes.sort((a, b) => a.distance - b.distance);
+    }
+  
+    setFilteredRoutes(filteredRoutes);
     setRoutesContainer(true);
   };
+  
 
   return (
     <div className='min-h-screen bg-gradient-to-b from-secondary-700 to-background-900 font-exo-2 flex flex-col pt-28 items-center p-4'>

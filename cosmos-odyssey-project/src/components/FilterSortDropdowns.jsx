@@ -1,8 +1,39 @@
 import PropTypes from 'prop-types';
 import Dropdown from './Dropdown';
+import { useEffect, useState } from 'react';
 
-const FilterSortDropdowns = ({ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes }) => {
-  const companyOptions = ['All Companies', ...new Set(filteredRoutes.map((route) => route.companyName))];
+const FilterSortDropdowns = ({
+  filterByCompany, 
+  sortBy, 
+  setFilterByCompany, 
+  setSortBy, 
+  filteredRoutes,
+  selectedStartPlanet, 
+  selectedEndPlanet
+}) => {
+  const [filteredByCompany, setFilteredByCompany] = useState(filteredRoutes);
+
+  const companyOptions = ['All Companies', ...new Set(
+    filteredRoutes
+      .flatMap(route => route.legs.map(leg => leg.company))
+      .filter(company => company)
+  )];
+
+  useEffect(() => {
+    const filteredRoutesByCompany = handleCompanyFilter(filterByCompany);
+    setFilteredByCompany(filteredRoutesByCompany);
+  }, [filterByCompany, filteredRoutes, selectedStartPlanet, selectedEndPlanet]);
+
+  const handleCompanyFilter = (selectedCompany) => {
+    if (selectedCompany === 'All Companies') {
+      return filteredRoutes;
+    }
+    return filteredRoutes.filter(route => 
+      route.legs.every(leg => leg.company === selectedCompany) &&
+      route.startPlanet === selectedStartPlanet &&
+      route.endPlanet === selectedEndPlanet
+    );
+  };
 
   const sortOptions = [
     { value: 'totalPrice', label: 'Price' },
@@ -30,15 +61,13 @@ const FilterSortDropdowns = ({ filterByCompany, sortBy, setFilterByCompany, setS
 };
 
 FilterSortDropdowns.propTypes = {
-  filterByCompany: PropTypes.string,
-  sortBy: PropTypes.string,
+  filterByCompany: PropTypes.string.isRequired,
+  sortBy: PropTypes.string.isRequired,
   setFilterByCompany: PropTypes.func.isRequired,
   setSortBy: PropTypes.func.isRequired,
-  filteredRoutes: PropTypes.arrayOf(
-    PropTypes.shape({
-      companyName: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  filteredRoutes: PropTypes.array.isRequired,
+  selectedStartPlanet: PropTypes.string.isRequired,
+  selectedEndPlanet: PropTypes.string.isRequired,
 };
 
 export default FilterSortDropdowns;

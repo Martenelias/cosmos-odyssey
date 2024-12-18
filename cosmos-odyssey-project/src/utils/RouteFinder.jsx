@@ -2,16 +2,16 @@
 import { processRoutes } from './routeProcessor';
 
 // Example of how you would call the function
-export const findCheapRoutes = (routeInfos, providers, selectedPlanet, selectedEndPlanet) => {
+export const findAllRoutes = (routeInfos, providers, selectedPlanet, selectedEndPlanet) => {
   console.log("Starting search from:", selectedPlanet, "to:", selectedEndPlanet);
 
   // Initialize cheapRoutes as an empty array
-  let cheapRoutes = [];
+  let allRoutes = [];
 
-  // Use the processRoutes function to get the cheapest routes
-  cheapRoutes = processRoutes(cheapRoutes, routeInfos, providers, selectedPlanet, selectedEndPlanet);
+  // Use the processRoutes function to get the allest routes
+  allRoutes = processRoutes(allRoutes, routeInfos, providers, selectedPlanet, selectedEndPlanet);
 
-  console.log("Cheap Routes:", cheapRoutes);
+  console.log("all Routes:", allRoutes);
 
-  return cheapRoutes;
+  return allRoutes;
 };
