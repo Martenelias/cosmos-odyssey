@@ -18,7 +18,7 @@ const ReservationContainer = ({ route, closeReservation, firstName, lastName, co
 
   return (
     <div className='fixed top-0 left-0 w-full h-full bg-background-900 bg-opacity-75 flex justify-center items-center'>
-      <div className='bg-tertiary-50 text-background-500 p-8 rounded-lg max-w-lg w-full'>
+      <div className='bg-tertiary-50 text-background-500 p-8 m-4 rounded-lg max-w-lg w-full'>
         <div className='flex justify-between items-center w-full'>
           <h2 className='text-lg w-full'>Reservation Details</h2>
           <button onClick={closeReservation} className='flex justify-end items-center p-4'>
