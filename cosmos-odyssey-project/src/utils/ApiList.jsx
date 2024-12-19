@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://cors-anywhere.herokuapp.com/https://cosmosodyssey.azurewebsites.net/api/v1.0/TravelPrices';
+const API_URL = 'https://cosmos-proxy-server.onrender.com/';
 
 const fetchData = async () => {
   try {

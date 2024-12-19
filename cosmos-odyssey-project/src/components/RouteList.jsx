@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { LandPlot, Clock, Rocket } from 'lucide-react';
 
 const RouteList = ({ routes, handleReservation }) => {
-
   const shortDateFormatter = new Intl.DateTimeFormat('en-US', {
     month: 'short',
     day: 'numeric',
@@ -26,7 +25,7 @@ const RouteList = ({ routes, handleReservation }) => {
                       <div className='flex justify-center items-center gap-4 w-full my-2'>
                         <div className='flex flex-col lg:flex-row justify-center items-center gap-2'>
                           <p className='text-primary-500'>{leg.from}</p>
-                          <p>{shortDateFormatter.format(new Date(leg.flightStart))}</p>
+                          <p>{shortDateFormatter.format(new Date(leg.flightStart))}</p> {/* Format here */}
                         </div>
                         <img
                           src='/smallRocket.svg'
@@ -35,7 +34,7 @@ const RouteList = ({ routes, handleReservation }) => {
                         />
                         <div className='flex flex-col lg:flex-row justify-center items-center gap-2'>
                           <p className='text-primary-500'>{leg.to}</p>  
-                          <p>{shortDateFormatter.format(new Date(leg.flightEnd))}</p>
+                          <p>{shortDateFormatter.format(new Date(leg.flightEnd))}</p> {/* Format here */}
                         </div>
                       </div>
                       <div className='text-tertiary-200 flex flex-col gap-2'>
@@ -91,8 +90,8 @@ RouteList.propTypes = {
         PropTypes.shape({
           from: PropTypes.string.isRequired,
           to: PropTypes.string.isRequired,
-          flightStart: PropTypes.string.isRequired,
-          flightEnd: PropTypes.string.isRequired,
+          flightStart: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
+          flightEnd: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
           distance: PropTypes.number.isRequired,
           duration: PropTypes.number.isRequired,
           company: PropTypes.string.isRequired,

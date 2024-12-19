@@ -25,6 +25,15 @@ export const ReservationProvider = ({ children }) => {
     localStorage.setItem('priceLists', JSON.stringify(priceLists));
   }, [reservations, priceLists]);
 
+  // delete reservation by id
+  const deleteReservation = (index) => {
+    setReservations((prev) => {
+      const newReservations = [...prev];
+      newReservations.splice(index, 1);
+      return newReservations;
+    });
+  };
+
   // addPriceList will be used to add a new price list to the priceLists state
   const addPriceList = useCallback((priceList) => {
     setPriceLists((prev) => updatePriceLists(priceList, prev));
@@ -61,7 +70,7 @@ export const ReservationProvider = ({ children }) => {
   
 
   return (
-    <ReservationContext.Provider value={{ reservations, addReservation, addPriceList }}>
+    <ReservationContext.Provider value={{ reservations, addReservation, addPriceList, deleteReservation }}>
       {children}
     </ReservationContext.Provider>
   );

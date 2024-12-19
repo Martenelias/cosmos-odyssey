@@ -34,6 +34,12 @@ const TravelRoutes = () => {
       const parsedProviders = getProviders(parsedLegs);
       const validUntil = new Date(data.validUntil).toISOString();
   
+      if (data) {
+        console.log('Data loaded successfully!', parsedLegs);
+      } else {
+        console.log('Error loading data!');
+      }
+
       setRouteInfos(parsedRoutesInfo);
       setProviders(parsedProviders);
       setValidUntil(validUntil);

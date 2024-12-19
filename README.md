@@ -29,6 +29,12 @@ The goal of Cosmos Odyssey is to provide users with an interactive platform to e
 - **Tailwind CSS** for styling.
 - **API:** Fetching and displaying route data from a third-party API.
 
+## Proxy
+
+Because the proxy server is on free hosting, free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
+Proxy server on Github [https://github.com/Martenelias/proxy-server](https://github.com/Martenelias/proxy-server)
+Proxy servers host is Render and its live <https://cosmos-proxy-server.onrender.com/>
+
 ## Getting Started
 
 To run Cosmos Odyssey locally, follow these steps

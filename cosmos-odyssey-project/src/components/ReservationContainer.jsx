@@ -78,8 +78,8 @@ ReservationContainer.propTypes = {
         from: PropTypes.string.isRequired,
         to: PropTypes.string.isRequired,
         company: PropTypes.string.isRequired,
-        flightStart: PropTypes.string.isRequired,
-        flightEnd: PropTypes.string.isRequired,
+        flightStart: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
+        flightEnd: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]).isRequired,
       })
     ).isRequired,
   }).isRequired,
@@ -88,5 +88,6 @@ ReservationContainer.propTypes = {
   lastName: PropTypes.string.isRequired,
   confirmReservation: PropTypes.func.isRequired,
 };
+
 
 export default ReservationContainer;

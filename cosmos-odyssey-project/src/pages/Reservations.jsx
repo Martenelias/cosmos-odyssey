@@ -2,7 +2,7 @@ import { useReservationContext } from '../utils/ReservationContext';
 import { LandPlot, Clock, ClockArrowUp, ClockArrowDown, Rocket } from 'lucide-react';
 
 const Reservations = () => {
-  const { reservations } = useReservationContext();
+  const { reservations, deleteReservation } = useReservationContext();
 
   const shortDateFormatter = new Intl.DateTimeFormat('en-US', {
     month: 'short',
@@ -32,7 +32,7 @@ const Reservations = () => {
                     <p className='text-primary-500 text-lg'>
                       {reservation.firstName} {reservation.lastName}
                     </p>
-                    <p>Expires: {new Date(reservation.expiresAt).toLocaleString()}</p>
+                    <p className='text-right'>Expires: {new Date(reservation.expiresAt).toLocaleString()}</p>
                   </div>
                   <div className='flex flex-col gap-4 my-2 border-b-2 pb-2'>
                     <div className='flex gap-4 py-2'>
@@ -74,6 +74,12 @@ const Reservations = () => {
                         </li>
                       ))}
                     </ul>
+                    <button
+                      className='rounded-lg text-tertiary-50 py-2 px-4 bg-tertiary-500 hover:bg-tertiary-700'
+                      onClick={() => deleteReservation(index)}
+                    >
+                      Delete
+                    </button>
                   </div>
                 </div>
               </li>
