@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Dropdown from './Dropdown';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 
 const FilterSortDropdowns = ({
   filterByCompany, 
@@ -13,18 +13,20 @@ const FilterSortDropdowns = ({
 }) => {
   const [filteredByCompany, setFilteredByCompany] = useState(filteredRoutes);
 
+  // Generate unique company options
   const companyOptions = ['All Companies', ...new Set(
     filteredRoutes
       .flatMap(route => route.legs.map(leg => leg.company))
       .filter(company => company)
   )];
 
+  // Reset the company filter when planets change
   useEffect(() => {
-    const filteredRoutesByCompany = handleCompanyFilter(filterByCompany);
-    setFilteredByCompany(filteredRoutesByCompany);
-  }, [filterByCompany, filteredRoutes, selectedStartPlanet, selectedEndPlanet]);
+    setFilterByCompany('All Companies');
+  }, [selectedStartPlanet, selectedEndPlanet, setFilterByCompany]);
 
-  const handleCompanyFilter = (selectedCompany) => {
+  // Filter routes by company
+  const handleCompanyFilter = useCallback((selectedCompany) => {
     if (selectedCompany === 'All Companies') {
       return filteredRoutes;
     }
@@ -33,8 +35,14 @@ const FilterSortDropdowns = ({
       route.startPlanet === selectedStartPlanet &&
       route.endPlanet === selectedEndPlanet
     );
-  };
+  }, [filteredRoutes, selectedStartPlanet, selectedEndPlanet]);
 
+  useEffect(() => {
+    const filteredRoutesByCompany = handleCompanyFilter(filterByCompany);
+    setFilteredByCompany(filteredRoutesByCompany);
+  }, [filterByCompany, handleCompanyFilter]);
+
+  // Sorting options
   const sortOptions = [
     { value: 'totalPrice', label: 'Price' },
     { value: 'totalTravelTime', label: 'Travel Time' },
@@ -56,6 +64,12 @@ const FilterSortDropdowns = ({
         onSelect={(selectedSort) => setSortBy(sortOptions.find(option => option.label === selectedSort)?.value)}
         buttonText='Select Sorting'
       />
+      
+      <ul>
+        {filteredByCompany.map((route, index) => (
+          <li key={index}>{route.name}</li>
+        ))}
+      </ul>
     </div>
   );
 };

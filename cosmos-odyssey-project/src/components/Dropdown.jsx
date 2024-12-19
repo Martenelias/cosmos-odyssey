@@ -43,7 +43,7 @@ const Dropdown = ({ label, options, onSelect, buttonText }) => {
                 <a
                   href='#'
                   onClick={() => handleOptionClick(option)}
-                  className='block px-4 py-2 hover:bg-primary-500'
+                  className='block px-4 py-2 text-background-500 hover:bg-primary-500'
                 >
                   {option}
                 </a>

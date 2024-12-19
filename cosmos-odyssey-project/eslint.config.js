@@ -24,6 +24,7 @@ export default [
       'react-refresh': reactRefresh,
     },
     rules: {
+      'indent': ['error', 2],
       'quotes': ['error', 'single'],
       'jsx-quotes': ['error', 'prefer-single'],
       ...js.configs.recommended.rules,

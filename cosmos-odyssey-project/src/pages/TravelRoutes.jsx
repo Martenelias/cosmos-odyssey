@@ -5,7 +5,9 @@ import { findAllRoutes } from '../utils/RouteFinder';
 import { getTopRoutes } from '../utils/TopRoutes';
 import TravelForm from '../components/TravelForm';
 import FilterSortDropdowns from '../components/FilterSortDropdowns';
+import ReservationContainer from '../components/ReservationContainer';
 import RouteList from '../components/RouteList';
+import { useReservationContext } from '../utils/ReservationContext';
 
 const TravelRoutes = () => {
   const [routeInfos, setRouteInfos] = useState([]);
@@ -18,6 +20,11 @@ const TravelRoutes = () => {
   const [filteredRoutes, setFilteredRoutes] = useState([]);
   const [filterByCompany, setFilterByCompany] = useState('');
   const [sortBy, setSortBy] = useState('');
+  const [reservationWindow, setReservationWindow] = useState(false);
+  const [selectedRoute, setSelectedRoute] = useState(null);
+  const [validUntil, setValidUntil] = useState(null);
+
+  const { addReservation, addPriceList } = useReservationContext();
 
   useEffect(() => {
     const loadData = async () => {
@@ -25,15 +32,48 @@ const TravelRoutes = () => {
       const parsedLegs = getLegs(data);
       const parsedRoutesInfo = getRoutesInfo(parsedLegs);
       const parsedProviders = getProviders(parsedLegs);
-
-      console.log('Loaded Route Infos:', parsedRoutesInfo);
-      console.log('Loaded Providers:', parsedProviders);
-
+      const validUntil = new Date(data.validUntil).toISOString();
+  
       setRouteInfos(parsedRoutesInfo);
       setProviders(parsedProviders);
+      setValidUntil(validUntil);
+  
+      const priceList = { validUntil, details: data };
+      addPriceList(priceList);
     };
     loadData();
-  }, []);
+  }, [addPriceList]);
+  
+
+  useEffect(() => {
+    if (
+      routeInfos.length > 0 &&
+      providers.length > 0 &&
+      selectedPlanet &&
+      selectedEndPlanet
+    ) {
+      const allRoutes = findAllRoutes(
+        routeInfos,
+        providers,
+        selectedPlanet,
+        selectedEndPlanet,
+        filterByCompany
+      );
+
+      let filteredRoutes = getTopRoutes(allRoutes);
+
+      if (sortBy === 'totalPrice') {
+        filteredRoutes.sort((a, b) => a.totalPrice - b.totalPrice);
+      } else if (sortBy === 'totalTravelTime') {
+        filteredRoutes.sort((a, b) => a.duration - b.duration);
+      } else if (sortBy === 'totalDistance') {
+        filteredRoutes.sort((a, b) => a.distance - b.distance);
+      }
+
+      setFilteredRoutes(filteredRoutes);
+    }
+  }, [routeInfos, providers, selectedPlanet, selectedEndPlanet, filterByCompany, sortBy]);
+
 
   const handleSearchRoutes = (e) => {
     e.preventDefault();
@@ -52,23 +92,31 @@ const TravelRoutes = () => {
       alert('Please select a different destination!');
       return;
     }
-  
-    const allRoutes = findAllRoutes(routeInfos, providers, selectedPlanet, selectedEndPlanet);
-  
-    let filteredRoutes = getTopRoutes(allRoutes);
-  
-    if (sortBy === 'totalPrice') {
-      filteredRoutes.sort((a, b) => a.totalPrice - b.totalPrice);
-    } else if (sortBy === 'totalTravelTime') {
-      filteredRoutes.sort((a, b) => a.duration - b.duration);
-    } else if (sortBy === 'totalDistance') {
-      filteredRoutes.sort((a, b) => a.distance - b.distance);
-    }
-  
-    setFilteredRoutes(filteredRoutes);
+
     setRoutesContainer(true);
   };
+
+  const confirmReservation = () => {
+    if (selectedRoute) {
+      addReservation({
+        route: selectedRoute,
+        firstName,
+        lastName,
+      }, validUntil);
+      setReservationWindow(false);
+      setSelectedRoute(null);
+    }
+  };
+
+  const handleReservation = (route) => {
+    setSelectedRoute(route);
+    setReservationWindow(true);
+  };
   
+  const closeReservationWindow = () => {
+    setReservationWindow(false);
+    setSelectedRoute(null);
+  };
 
   return (
     <div className='min-h-screen bg-gradient-to-b from-secondary-700 to-background-900 font-exo-2 flex flex-col pt-28 items-center p-4'>
@@ -103,14 +151,28 @@ const TravelRoutes = () => {
                 </div>
                 <div className='flex justify-center items-center gap-4 w-full px-4'>
                   <FilterSortDropdowns
-                    {...{ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes }}
+                    {...{ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes, selectedStartPlanet: selectedPlanet, selectedEndPlanet }}
                   />
                 </div>
               </div>
             </div>
-            <RouteList routes={filteredRoutes} />
+            <RouteList 
+              routes={filteredRoutes} 
+              handleReservation={handleReservation} 
+            />
+
           </div>
         )}
+        {reservationWindow && selectedRoute && (
+          <ReservationContainer
+            route={selectedRoute}
+            closeReservation={closeReservationWindow}
+            firstName={firstName}
+            lastName={lastName}
+            confirmReservation={confirmReservation}
+          />
+        )}
+
       </div>
     </div>
   );
