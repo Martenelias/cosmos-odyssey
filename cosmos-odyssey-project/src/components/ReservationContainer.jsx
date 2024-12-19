@@ -5,8 +5,16 @@ import { NavLink } from 'react-router-dom';
 const ReservationContainer = ({ route, closeReservation, firstName, lastName, confirmReservation }) => {
   const { totalPrice, duration, legs } = route;
 
-  const firstLegStart = new Date(legs[0]?.flightStart).toISOString();
-  const lastLegEnd = new Date(legs[legs.length - 1]?.flightEnd).toISOString();
+  const shortDateFormatter = new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  });
+
+  const firstLegStart = shortDateFormatter.format(new Date(legs[0]?.flightStart));
+  const lastLegEnd = shortDateFormatter.format(new Date(legs[legs.length - 1]?.flightEnd));
 
   return (
     <div className='fixed top-0 left-0 w-full h-full bg-background-900 bg-opacity-75 flex justify-center items-center'>

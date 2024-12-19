@@ -10,7 +10,7 @@ const Nav = () => {
       </Navbar.Brand>
       <Navbar.Toggle className='hover:bg-transparent text-tertiary-50' />
       <Navbar.Collapse>
-        <NavLink to='/' active className='text-base md:text-sm my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
+        <NavLink to='/' className='text-base md:text-sm my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>
           Home
         </NavLink>
         <NavLink to='/routes' className='my-1 py-2 px-4 rounded-lg hover:bg-primary-900'>

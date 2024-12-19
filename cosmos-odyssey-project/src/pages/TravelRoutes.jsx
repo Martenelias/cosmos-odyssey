@@ -7,7 +7,7 @@ import TravelForm from '../components/TravelForm';
 import FilterSortDropdowns from '../components/FilterSortDropdowns';
 import ReservationContainer from '../components/ReservationContainer';
 import RouteList from '../components/RouteList';
-import { useReservationContext } from '../components/ReservationContext';
+import { useReservationContext } from '../utils/ReservationContext';
 
 const TravelRoutes = () => {
   const [routeInfos, setRouteInfos] = useState([]);
@@ -22,6 +22,9 @@ const TravelRoutes = () => {
   const [sortBy, setSortBy] = useState('');
   const [reservationWindow, setReservationWindow] = useState(false);
   const [selectedRoute, setSelectedRoute] = useState(null);
+  const [validUntil, setValidUntil] = useState(null);
+
+  const { addReservation, addPriceList } = useReservationContext();
 
   useEffect(() => {
     const loadData = async () => {
@@ -29,15 +32,29 @@ const TravelRoutes = () => {
       const parsedLegs = getLegs(data);
       const parsedRoutesInfo = getRoutesInfo(parsedLegs);
       const parsedProviders = getProviders(parsedLegs);
-
+      const validUntil = new Date(data.validUntil).toISOString();
+      const currentTime = new Date().toISOString();
+  
+      if (validUntil < currentTime) {
+        console.log('Data is outdated. Please contact the administrator!', validUntil);
+      } else {
+        console.log('Data is up to date!', validUntil, 'Currenttime: ', currentTime);
+      }
+  
       console.log('Loaded Route Infos:', parsedRoutesInfo);
       console.log('Loaded Providers:', parsedProviders);
-
+  
       setRouteInfos(parsedRoutesInfo);
       setProviders(parsedProviders);
+      setValidUntil(validUntil);
+  
+      const priceList = { validUntil, details: data };
+      addPriceList(priceList);
+      console.log('Price List:', priceList);
     };
     loadData();
-  }, []);
+  }, [addPriceList]);
+  
 
   useEffect(() => {
     if (
@@ -90,16 +107,16 @@ const TravelRoutes = () => {
     setRoutesContainer(true);
   };
 
-  const { addReservation } = useReservationContext();
-
   const confirmReservation = () => {
-    addReservation({
-      route: selectedRoute,
-      firstName,
-      lastName,
-    });
-    setReservationWindow(false);
-    setSelectedRoute(null);
+    if (selectedRoute) {
+      addReservation({
+        route: selectedRoute,
+        firstName,
+        lastName,
+      }, validUntil);
+      setReservationWindow(false);
+      setSelectedRoute(null);
+    }
   };
 
   const handleReservation = (route) => {

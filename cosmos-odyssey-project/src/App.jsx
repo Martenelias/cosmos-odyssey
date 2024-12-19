@@ -4,7 +4,7 @@ import Intro from './pages/Intro';
 import TravelRoutes from './pages/TravelRoutes';
 import Nav from './components/Navbar';
 import Reservations from './pages/Reservations';
-import { ReservationProvider } from './components/ReservationContext';
+import { ReservationProvider } from './utils/ReservationContext';
 
 function App() {
   
