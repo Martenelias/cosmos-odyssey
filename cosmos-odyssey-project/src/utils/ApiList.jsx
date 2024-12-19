@@ -5,7 +5,6 @@ const API_URL = 'https://cors-anywhere.herokuapp.com/https://cosmosodyssey.azure
 const fetchData = async () => {
   try {
     const response = await axios.get(API_URL);
-    console.log('API response:', response.data);
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);

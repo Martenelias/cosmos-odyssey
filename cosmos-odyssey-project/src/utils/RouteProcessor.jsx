@@ -53,7 +53,7 @@ function exploreAllRoutes(currentRoute, allRoutes, routeInfos, providers, endPla
         // Recursively explore the next planet
         visitedPlanets.add(route.to.name);
         exploreAllRoutes(newRoute, allRoutes, routeInfos, providers, endPlanet, visitedPlanets, filterByCompany);
-        visitedPlanets.delete(route.to.name); // Backtrack
+        visitedPlanets.delete(route.to.name);
       }
     }
   }
@@ -61,7 +61,6 @@ function exploreAllRoutes(currentRoute, allRoutes, routeInfos, providers, endPla
   
 // Function to process the routes and find all possible ones
 export const processRoutes = (allRoutes, routeInfos, providers, selectedPlanet, selectedEndPlanet, filterByCompany) => {
-  console.log(`1. Starting search from ${selectedPlanet} to ${selectedEndPlanet}`);
   
   const visitedPlanets = new Set();
   const initialRoute = {
@@ -75,13 +74,10 @@ export const processRoutes = (allRoutes, routeInfos, providers, selectedPlanet, 
   exploreAllRoutes(initialRoute, allRoutes, routeInfos, providers, selectedEndPlanet, visitedPlanets, filterByCompany);
   
   // Filter out routes that don't reach the destination
-  console.log('Filtering allRoutes for selected end planet:', selectedEndPlanet);
-  console.log('Routes before filtering:', allRoutes);
   allRoutes = allRoutes.filter(route => 
     route.path[0] === selectedPlanet && route.path[route.path.length - 1] === selectedEndPlanet
   );
   
-  console.log('Routes after filtering:', allRoutes);
   return allRoutes;
 };
   
@@ -89,12 +85,11 @@ export const processRoutes = (allRoutes, routeInfos, providers, selectedPlanet, 
 const calculateDuration = (flightStart, flightEnd) => {
   const start = new Date(flightStart);
   const end = new Date(flightEnd);
-  const durationMs = end - start; // Get the difference in milliseconds
+  const durationMs = end - start;
   
   // Convert milliseconds to hours and minutes
-  const hours = Math.floor(durationMs / (1000 * 60 * 60)); // Convert to hours
-  const minutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60)); // Convert the remainder to minutes
-  
-  return hours * 60 + minutes; // Return total duration in minutes
+  const hours = Math.floor(durationMs / (1000 * 60 * 60));
+  const minutes = Math.floor((durationMs % (1000 * 60 * 60)) / (1000 * 60));
+  return hours * 60 + minutes;
 };
   

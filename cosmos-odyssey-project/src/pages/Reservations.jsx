@@ -3,7 +3,6 @@ import { LandPlot, Clock, ClockArrowUp, ClockArrowDown, Rocket } from 'lucide-re
 
 const Reservations = () => {
   const { reservations } = useReservationContext();
-  console.log('Reservations:', reservations);
 
   const shortDateFormatter = new Intl.DateTimeFormat('en-US', {
     month: 'short',

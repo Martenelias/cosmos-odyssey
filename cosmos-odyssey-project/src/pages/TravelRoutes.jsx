@@ -33,16 +33,6 @@ const TravelRoutes = () => {
       const parsedRoutesInfo = getRoutesInfo(parsedLegs);
       const parsedProviders = getProviders(parsedLegs);
       const validUntil = new Date(data.validUntil).toISOString();
-      const currentTime = new Date().toISOString();
-  
-      if (validUntil < currentTime) {
-        console.log('Data is outdated. Please contact the administrator!', validUntil);
-      } else {
-        console.log('Data is up to date!', validUntil, 'Currenttime: ', currentTime);
-      }
-  
-      console.log('Loaded Route Infos:', parsedRoutesInfo);
-      console.log('Loaded Providers:', parsedProviders);
   
       setRouteInfos(parsedRoutesInfo);
       setProviders(parsedProviders);
@@ -50,7 +40,6 @@ const TravelRoutes = () => {
   
       const priceList = { validUntil, details: data };
       addPriceList(priceList);
-      console.log('Price List:', priceList);
     };
     loadData();
   }, [addPriceList]);
@@ -122,7 +111,6 @@ const TravelRoutes = () => {
   const handleReservation = (route) => {
     setSelectedRoute(route);
     setReservationWindow(true);
-    console.log('Selected Route onClick:', route);
   };
   
   const closeReservationWindow = () => {
