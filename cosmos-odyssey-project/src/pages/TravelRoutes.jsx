@@ -140,16 +140,16 @@ const TravelRoutes = () => {
         {routesContainer && (
           <div className='text-tertiary-50 rounded-lg'>
             <div className='flex justify-between items-center mb-4 w-full bg-background-500 rounded-lg p-4'>
-              <img src='/rocket.svg' alt='A rocket svg image' className='h-16 p-4' />
-              <div className='flex flex-col lg:flex-row gap-4 w-full'>
-                <div className='flex items-center w-full'>
-                  <div className='flex justify-center w-full items-center gap-4 lg:border-l lg:border-r border-l-none ml-4'>
+              <img src='/rocket.svg' alt='A rocket svg image' className='h-16 p-4 md:block hidden' />
+              <div className='flex flex-col justify-center items-center lg:flex-row gap-4 w-full'>
+                <div className='flex justify-center items-center w-full'>
+                  <div className='flex justify-center gap-4 w-full items-center lg:border-l lg:border-r border-l-none'>
                     <p className='text-lg'>{selectedPlanet}</p>
                     <img src='/smallRocket.svg' alt='Small rocket svg image' className='h-4 rotate-45' />
                     <p className='text-lg'>{selectedEndPlanet}</p>
                   </div>
                 </div>
-                <div className='flex justify-center items-center gap-4 w-full px-4'>
+                <div className='flex justify-between items-center w-full ml-4'>
                   <FilterSortDropdowns
                     {...{ filterByCompany, sortBy, setFilterByCompany, setSortBy, filteredRoutes, selectedStartPlanet: selectedPlanet, selectedEndPlanet }}
                   />

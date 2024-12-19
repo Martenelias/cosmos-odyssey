@@ -24,15 +24,19 @@ const RouteList = ({ routes, handleReservation }) => {
                   {route.legs.map((leg, i) => (
                     <div key={i} className='flex flex-col justify-center items-center border-b py-2'>
                       <div className='flex justify-center items-center gap-4 w-full my-2'>
-                        <p className='text-primary-500'>{leg.from}</p>
-                        <p>{shortDateFormatter.format(new Date(leg.flightStart))}</p>
+                        <div className='flex flex-col lg:flex-row justify-center items-center gap-2'>
+                          <p className='text-primary-500'>{leg.from}</p>
+                          <p>{shortDateFormatter.format(new Date(leg.flightStart))}</p>
+                        </div>
                         <img
                           src='/smallRocket.svg'
                           alt='Small rocket icon'
                           className='h-4 rotate-45'
                         />
-                        <p>{shortDateFormatter.format(new Date(leg.flightEnd))}</p>
-                        <p className='text-primary-500'>{leg.to}</p>
+                        <div className='flex flex-col lg:flex-row justify-center items-center gap-2'>
+                          <p className='text-primary-500'>{leg.to}</p>  
+                          <p>{shortDateFormatter.format(new Date(leg.flightEnd))}</p>
+                        </div>
                       </div>
                       <div className='text-tertiary-200 flex flex-col gap-2'>
                         <p className='flex items-center gap-2'>
