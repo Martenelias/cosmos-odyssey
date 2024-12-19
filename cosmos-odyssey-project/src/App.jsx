@@ -4,6 +4,7 @@ import Intro from './pages/Intro';
 import TravelRoutes from './pages/TravelRoutes';
 import Nav from './components/Navbar';
 import Reservations from './pages/Reservations';
+import { ReservationProvider } from './components/ReservationContext';
 
 function App() {
   
@@ -13,10 +14,12 @@ function App() {
         <Route path='/' element={<Intro />} />
       </Routes>
       <Nav />
-      <Routes>
-        <Route path='/routes' element={<TravelRoutes />} />
-        <Route path='/reservations' element={<Reservations />} />
-      </Routes>
+      <ReservationProvider>
+        <Routes>
+          <Route path='/routes' element={<TravelRoutes />} />
+          <Route path='/reservations' element={<Reservations />} />
+        </Routes>
+      </ReservationProvider>
     </Router>
   );
 }

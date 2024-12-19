@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { X, ClockArrowUp, ClockArrowDown, Clock, BadgeEuro } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
 
-const ReservationContainer = ({ route, closeReservation }) => {
+const ReservationContainer = ({ route, closeReservation, firstName, lastName, confirmReservation }) => {
   const { totalPrice, duration, legs } = route;
 
-  // Get the first leg's flight start time and the last leg's flight end time
-  const firstLegStart = new Date(legs[0]?.flightStart); // First leg's flight start
-  const lastLegEnd = new Date(legs[legs.length - 1]?.flightEnd); // Last leg's flight end
+  const firstLegStart = new Date(legs[0]?.flightStart).toISOString();
+  const lastLegEnd = new Date(legs[legs.length - 1]?.flightEnd).toISOString();
 
   return (
     <div className='fixed top-0 left-0 w-full h-full bg-background-900 bg-opacity-75 flex justify-center items-center'>
@@ -18,8 +18,11 @@ const ReservationContainer = ({ route, closeReservation }) => {
           </button>
         </div>
 
-        {/* Display flight start of the first leg and flight end of the last leg */}
-        <ul className='flex flex-col gap-4 mt-4'>
+        <div className='flex gap-2'>
+          <p>{firstName}</p>
+          <p>{lastName}</p>
+        </div>
+        <ul className='flex flex-col gap-4 my-4'>
           <p className='flex items-center gap-2'>
             <ClockArrowUp />
             {firstLegStart.toLocaleString()}
@@ -30,7 +33,7 @@ const ReservationContainer = ({ route, closeReservation }) => {
           </p>
           <p className='flex items-center gap-2'>
             <BadgeEuro />
-            {totalPrice}
+            {(totalPrice).toFixed(2)}
           </p>
           <p className='flex items-center gap-2'>
             <Clock />
@@ -46,9 +49,13 @@ const ReservationContainer = ({ route, closeReservation }) => {
             </ul>
           </div>
         </ul>
-        <button className='mt-4 bg-primary-500 text-white py-2 px-4 rounded-lg' onClick={closeReservation}>
-          Book Reservation
-        </button>
+        <NavLink
+          to='/reservations'
+          className='rounded-lg text-tertiary-50  py-2 px-4 w-full bg-primary-500 hover:bg-primary-700'
+          onClick={confirmReservation}
+        >
+            Book Reservation
+        </NavLink>
       </div>
     </div>
   );
@@ -69,6 +76,9 @@ ReservationContainer.propTypes = {
     ).isRequired,
   }).isRequired,
   closeReservation: PropTypes.func.isRequired,
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
+  confirmReservation: PropTypes.func.isRequired,
 };
 
 export default ReservationContainer;

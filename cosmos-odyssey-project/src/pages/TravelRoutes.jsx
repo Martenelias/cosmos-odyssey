@@ -7,6 +7,7 @@ import TravelForm from '../components/TravelForm';
 import FilterSortDropdowns from '../components/FilterSortDropdowns';
 import ReservationContainer from '../components/ReservationContainer';
 import RouteList from '../components/RouteList';
+import { useReservationContext } from '../components/ReservationContext';
 
 const TravelRoutes = () => {
   const [routeInfos, setRouteInfos] = useState([]);
@@ -89,6 +90,18 @@ const TravelRoutes = () => {
     setRoutesContainer(true);
   };
 
+  const { addReservation } = useReservationContext();
+
+  const confirmReservation = () => {
+    addReservation({
+      route: selectedRoute,
+      firstName,
+      lastName,
+    });
+    setReservationWindow(false);
+    setSelectedRoute(null);
+  };
+
   const handleReservation = (route) => {
     setSelectedRoute(route);
     setReservationWindow(true);
@@ -149,6 +162,9 @@ const TravelRoutes = () => {
           <ReservationContainer
             route={selectedRoute}
             closeReservation={closeReservationWindow}
+            firstName={firstName}
+            lastName={lastName}
+            confirmReservation={confirmReservation}
           />
         )}
 
